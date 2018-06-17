@@ -1,0 +1,456 @@
+<div class="container" style="min-height: 500px;position: relative;">
+  <div class="row" *ngIf="!isLoading" style="margin-top: 10px">
+    <div class="col-sm-2">
+      <select class="form-control" (change)="onChange($event.target.value)">
+        <option selected value="default">Mặc định</option>
+        <option value="increase">Giá từ thấp tới cao</option>
+        <option value="decrease">Giá từ cao xuống thấp</option>
+      </select>
+    </div>
+    <div class="col-sm-2">
+      <select class="form-control" (change)="onChangeCity($event.target.value)">
+        <option selected value="default">Tỉnh/Thành</option>
+        <option *ngFor="let city of tinhthanh" value="{{city.id}}">{{city.tentp}}</option>
+      </select>
+    </div>
+    <div class="col-sm-2">
+      <select class="form-control" (change)="onChangeDistrict($event.target.value)" [disabled]="!isChooseCity">
+        <option selected value="default">Quận/Huyện</option>
+        <option *ngFor="let dis of district" value="{{dis.id}}">{{dis.tenquanhuyen}}</option>
+      </select>
+    </div>
+    <div class="col-sm-2">
+      <select class="form-control" (change)="onChangeDientich($event.target.value)">
+        <option selected value="default">Diện tích</option>
+        <option value="1">
+          < 50m2</option>
+            <option value="2">50 - 100m2</option>
+            <option value="3">100 - 150m2</option>
+            <option value="4">150 - 200m2</option>
+            <option value="5">> 200m2</option>
+      </select>
+    </div>
+    <div class="col-sm-2">
+      <select class="form-control" (change)="onChangeGia($event.target.value)">
+        <option selected value="default">Khoảng giá</option>
+        <option value="1">
+          < 500 triệu</option>
+            <option value="2">500 triệu - 1 tỷ</option>
+            <option value="3">1 - 1,5 tỷ</option>
+            <option value="4">1,5 - 2 tỷ</option>
+            <option value="5">> 2 tỷ</option>
+      </select>
+    </div>
+    <div class="col-sm-2">
+      <button routerLink="/manage/addnews" class="btn btn-primary btn-block">Thêm tin mới</button>
+    </div>
+  </div>
+  <div class="row" *ngIf="!isLoading" style="margin-top:20px;">
+    <div class="outer" style="text-align: center; width: 100%;" *ngIf="isEmpty">
+      <h1>Chưa có dữ liệu!</h1>
+    </div>
+    <div class="col-md-3 col-sm-3" style="margin-bottom: 20px;" *ngFor="let hotel of hotelList | paginate: { itemsPerPage: 8, currentPage: p }">
+      <img src="{{ hotel.link }}" style="height: 300px; width: 250px" class="img-thumbnail">
+      <h6 class="title" style="text-align: center; margin-top: 10px;">{{ hotel.news.tieude.substring(0, 25) }}</h6>
+      <div class="description">
+        <small>
+          <img src="assets/images/location.png" style="height: 20px; width: 20px"> {{ hotel.news.diachi.substring(0, 30) }}...
+        </small>
+        <br>
+        <small>
+          <img src="assets/images/dientich.png" style="height: 20px; width: 20px"> Diện tích: {{hotel.news.dientich}}m2({{ hotel.news.chieudai }}m X {{ hotel.news.chieurong }}m)</small>
+      </div>
+      <div class="price">
+        <h6>Giá:
+          <strong *ngIf="hotel.news.gia/1000000>1&&hotel.news.gia/1000000<1000">{{ hotel.news.gia/1000000 }} Triệu VNĐ</strong>
+          <strong *ngIf="hotel.news.gia/1000000000>1">{{ hotel.news.gia/1000000000 }} Tỷ VNĐ</strong>
+          <strong *ngIf="hotel.news.gia/1000000<1">{{ hotel.news.gia}} VNĐ</strong>
+        </h6>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <button (click)="show($event)" data-target="#detailnews" data-toggle="modal" name="{{hotel.news.id}}" class="btn btn-primary btn-block">Xem chi tiết</button>
+        </div>
+        <div class="col-sm-6">
+          <button class="btn btn-danger btn-block" (click)="delete($event)" name="{{hotel.news.id}}" data-target="#confirmdelete" data-toggle="modal">Xóa</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" style="text-align:center;">
+  <div class="col-md-12">
+    <pagination-controls (pageChange)="pageChange(p = $event)"></pagination-controls>
+  </div>
+</div>
+<div id="detailnews" class="modal fade" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 *ngIf="isDetail" class="modal-title">{{details.tieude}}</h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="tabhead" href="#detail" role="tab" data-toggle="tab">Chi tiết</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#image" role="tab" data-toggle="tab">Hình ảnh</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#map" role="tab" data-toggle="tab">Bản đồ</a>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane fade show active" id="detail">
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-sm-12 my-3">
+                    <div class="card card-body bg-light">
+                      <strong>Thông tin chi tiết</strong>
+                      <img *ngIf="!isEditInfoDetail" (click)="isEditInfoDetail=!isEditInfoDetail" src="assets/images/icon_edit.png" style="height: 35px; width: 35px; position: absolute; right: 0px; cursor: pointer;"
+                        class="img-thumbnail">
+                      <img *ngIf="isEditInfoDetail" (click)="saveInfoDetailUpdate()" src="assets/images/icon_save.png" style="height: 35px; width: 35px; position: absolute; right: 50px; cursor: pointer;"
+                        class="img-thumbnail">
+                      <img *ngIf="isEditInfoDetail" (click)="canleUpdate(isEditInfoDetail=!isEditInfoDetail)" src="assets/images/icon_cancle.png"
+                        style="height: 35px; width: 35px; position: absolute; right: 0px; cursor: pointer;" class="img-thumbnail">
+                      <table *ngIf="isDetail&&!isEditInfoDetail" class="table">
+                        <tbody>
+                          <tr>
+                            <td>Tiêu đề</td>
+                            <td>{{details.tieude}}</td>
+                          </tr>
+                          <tr>
+                            <td>Loại bất động sản</td>
+                            <td>{{details.loaibds}}</td>
+                          </tr>
+                          <tr>
+                            <td>Địa chỉ</td>
+                            <td>{{details.diachi}}</td>
+                          </tr>
+                          <tr>
+                            <td>Diện tích</td>
+                            <td>{{details.dientich}}m2({{ details.chieudai }}m X {{ details.chieurong }}m)</td>
+                          </tr>
+                          <tr>
+                            <td>Giá</td>
+                            <td *ngIf="unit==='1'">{{details.gia}} VNĐ</td>
+                            <td *ngIf="unit==='1000000'">{{details.gia/1000000}} Triệu VNĐ</td>
+                            <td *ngIf="unit==='1000000000'">{{details.gia/1000000000}} Tỷ VNĐ</td>
+                          </tr>
+                          <tr>
+                            <td>Ngày đăng</td>
+                            <td>{{details.ngay}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <div *ngIf="isEditInfoDetail">
+                        <table class="table">
+                          <tbody>
+                            <tr>
+                              <td style="width: 150px;">
+                                <b>Tiêu đề</b>
+                              </td>
+                              <td>
+                                <input [(ngModel)]="update.tieude" name="title" type="text" class="form-control" placeholder="Nhập tiêu đề*">
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="width: 150px;">
+                                <b>Loại</b>
+                              </td>
+                              <td>
+                                <input [(ngModel)]="update.loaibds" name="type" type="text" placeholder="Loại bất động sản*" class="form-control">
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table class="table">
+                          <tbody>
+                            <tr>
+                              <td style="width: 150px;">
+                                <b>Giá</b>
+                              </td>
+                              <td>
+                                <input [(ngModel)]="gia" (input)="onChangePrice($event.target.value)" name="hotelPrice" type="number" placeholder="Nhập giá*"
+                                  class="form-control">
+                              </td>
+                              <td>
+                                <select class="form-control" (change)="onChangeUnitMoney($event.target.value)">
+                                  <option selected value="1" [selected]="unitMoney==='1'">VNĐ</option>
+                                  <option value="1000000" [selected]="unitMoney==='1000000'">Triệu VNĐ</option>
+                                  <option value="1000000000" [selected]="unitMoney==='1000000000'">Tỷ VNĐ</option>
+                                </select>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <table class="table">
+                          <tbody>
+                            <tr>
+                              <td style="width: 150px;">
+                                <b>Diện tích</b>
+                              </td>
+                              <td>
+                                <input [(ngModel)]="update.chieudai" name="heigthHotel" type="number" placeholder="Chiều dài*" class="form-control">
+                              </td>
+                              <td>
+                                <div style="margin-top: 10px;">m</div>
+                              </td>
+                              <td>
+                                <div style="margin-top: 10px;">
+                                  <b>X</b>
+                                </div>
+                              </td>
+                              <td>
+                                <input [(ngModel)]="update.chieurong" name="widthHotel" type="number" placeholder="Chiều rộng*" class="form-control">
+                              </td>
+                              <td>
+                                <div style="margin-top: 10px;">m</div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                        <table class="table">
+                          <tbody>
+                            <tr>
+                              <td style="width: 150px;">
+                                <b>Tỉnh/Thành phố</b>
+                              </td>
+                              <td>
+                                <select class="form-control" (change)="onChangeCityEdit($event.target.value)">
+                                  <option *ngFor="let city of tinhthanhedit" value="{{city.id}}" [selected]="city.id===idtp">{{city.tentp}}</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="width: 150px;">
+                                <b>Quận/Huyện</b>
+                              </td>
+                              <td>
+                                <select class="form-control" (change)="onChangeDistrictEdit($event.target.value)">
+                                  <option *ngFor="let dis of districtedit" value="{{dis.id}}" [selected]="dis.id===idquanhuyen">{{dis.tenquanhuyen}}</option>
+                                </select>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td style="width: 150px;">
+                                <b>Số nhà</b>
+                              </td>
+                              <td>
+                                <input [(ngModel)]="update.diachi.split(',')[0]" (input)="onChangeText($event.target.value)" name="detailAdress" type="text"
+                                  class="form-control" placeholder="Số nhà, đường, phường/xã*">
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-12 my-2">
+                    <div class="card card-body bg-light">
+                      <img *ngIf="!isEditDecribe" (click)="isEditDecribe=!isEditDecribe" src="assets/images/icon_edit.png" style="height: 35px; width: 35px; position: absolute; right: 0px; cursor: pointer;"
+                        class="img-thumbnail">
+                      <img *ngIf="isEditDecribe" (click)="saveDecribeUpdate()" src="assets/images/icon_save.png" style="height: 35px; width: 35px; position: absolute; right: 50px; cursor: pointer;"
+                        class="img-thumbnail">
+                      <img *ngIf="isEditDecribe" (click)="canleUpdate(isEditDecribe=!isEditDecribe)" src="assets/images/icon_cancle.png" style="height: 35px; width: 35px; position: absolute; right: 0px; cursor: pointer;"
+                        class="img-thumbnail">
+                      <strong>Mô tả thêm</strong>
+                      <div id="motathem" style="margin-top: 10px; margin-left: 10px;">
+                      </div>
+
+                      <ck-editor *ngIf="isEditDecribe" name="editor1" [(ngModel)]="motathem" skin="moono-lisa" language="en" [fullPage]="true"></ck-editor>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-12 my-2">
+                    <div class="card card-body bg-light">
+                      <strong>Thông tin liên hệ</strong>
+                      <img *ngIf="!isEditInfoContact" (click)="isEditInfoContact=!isEditInfoContact" src="assets/images/icon_edit.png" style="height: 35px; width: 35px; position: absolute; right: 0px; cursor: pointer;"
+                        class="img-thumbnail">
+                      <img *ngIf="isEditInfoContact" (click)="saveInfoContactUpdate()" src="assets/images/icon_save.png" style="height: 35px; width: 35px; position: absolute; right: 50px; cursor: pointer;"
+                        class="img-thumbnail">
+                      <img *ngIf="isEditInfoContact" (click)="canleUpdate(isEditInfoContact=!isEditInfoContact)" src="assets/images/icon_cancle.png"
+                        style="height: 35px; width: 35px; position: absolute; right: 0px; cursor: pointer;" class="img-thumbnail">
+                      <table *ngIf="isDetail&&!isEditInfoContact" class="table">
+                        <tbody>
+                          <tr>
+                            <td>Họ tên</td>
+                            <td>{{details.hoten}}</td>
+                          </tr>
+                          <tr>
+                            <td>Số điện thoại</td>
+                            <td>{{details.sdt}}</td>
+                          </tr>
+                          <tr>
+                            <td>Email</td>
+                            <td *ngIf="details.email!==''">{{details.email}}</td>
+                            <td *ngIf="details.email===''">Chưa có</td>
+                          </tr>
+                          <tr>
+                            <td>Facebook</td>
+                            <td *ngIf="details.facebook!==''">
+                              <a href="{{details.facebook}}" target="_blank">Xem</a>
+                            </td>
+                            <td *ngIf="details.facebook===''">
+                              Chưa có
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <table *ngIf="isEditInfoContact" class="table">
+                        <tbody>
+                          <tr>
+                            <td style="width: 150px;">
+                              <b>Họ tên</b>
+                            </td>
+                            <td>
+                              <input [(ngModel)]="update.hoten" name="nameBoss" type="text" class="form-control" placeholder="Nhập họ tên*">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 150px;">
+                              <b>Số điện thoại</b>
+                            </td>
+                            <td>
+                              <input [(ngModel)]="update.sdt" name="phoneBoss" type="text" class="form-control" placeholder="Nhập số điện thoại*">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 150px;">
+                              <b>Email</b>
+                            </td>
+                            <td>
+                              <input [(ngModel)]="update.email" name="emailBoss" type="text" class="form-control" placeholder="Nhập địa chỉ email">
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="width: 150px;">
+                              <b>Facebook</b>
+                            </td>
+                            <td>
+                              <input [(ngModel)]="update.facebook" name="facebookBoss" type="text" class="form-control" placeholder="Nhập địa chỉ facebook">
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+          <!-- nội dung tab hình ảnh -->
+          <div role="tabpanel" class="tab-pane fade" id="image">
+            <img *ngIf="!isEditImage" (click)="editImg(isEditImage=!isEditImage)" src="assets/images/icon_edit.png" style="height: 35px; width: 35px; position: absolute; right: 15px; top: 20px; cursor: pointer;"
+              class="img-thumbnail">
+            <img *ngIf="isEditImage" (click)="saveImageUpdate(isEditImage=!isEditImage)" src="assets/images/icon_save.png" style="height: 35px; width: 35px; position: absolute; right: 65px; top: 20px; cursor: pointer;"
+              class="img-thumbnail">
+            <img *ngIf="isEditImage" (click)="canleUpdate(isEditImage=!isEditImage)" src="assets/images/icon_cancle.png" style="height: 35px; width: 35px; position: absolute; right: 15px; top: 20px; cursor: pointer;"
+              class="img-thumbnail">
+
+            <div class="card bg-light" *ngIf="isEditImage" style="margin-top: 10px;">
+              <div class="card-body">
+                <strong>
+                  <h4>Thêm ảnh về tin</h4>
+                </strong>
+                <div class="row" style="padding: 10px;">
+                  <input style="display: none;" type="file" accept="image/*" (change)="onFileSelect($event.target.files)" multiple #fileInput>
+                  <div class="col-sm-3 upload" style="cursor: pointer;">
+                    <img (click)="fileInput.click()" src="assets/images/upload.PNG" alt="Tải ảnh lên" title="Chọn ảnh tải lên" class="img-thumbnail"
+                      style="height: 200px; width:300px;">
+                  </div>
+                  <div class="col-sm-3" *ngFor="let src of listImg">
+                    <div (click)="removeImg($event)" style="position: absolute; right: 20px; text-decoration:none; color: black; cursor: pointer;">X</div>
+                    <img src="{{src.img}}" name="{{src.id}}" alt="Ảnh" class="img-thumbnail" #Image accept="image/*" style="height: 200px; width:300px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ngb-carousel *ngIf="!isEditImage">
+              <ng-template ngbSlide *ngFor="let img of imagesUrl">
+                <div class="carousel-caption">
+                  <img src="{{img.link}}" alt="Random first slide" style="height: 400px; width: 350px">
+                </div>
+                <img src="https://vignette.wikia.nocookie.net/minecraftcreepypasta/images/3/3c/Solids-black.jpg/revision/latest/scale-to-width-down/640?cb=20161231184957"
+                  alt="Random first slide" style="height: 450px; width: 100%">
+              </ng-template>
+            </ngb-carousel>
+          </div>
+          <!-- nội dung map -->
+          <div role="tabpanel" class="tab-pane" id="map">
+            <img *ngIf="!isEditMap" (click)="isEditMap=!isEditMap" src="assets/images/icon_edit.png" style="height: 35px; width: 35px; position: absolute; right: 15px; top: 20px; cursor: pointer;"
+              class="img-thumbnail">
+            <img *ngIf="isEditMap" (click)="saveMapUpdate()" src="assets/images/icon_save.png" style="height: 35px; width: 35px; position: absolute; right: 65px; top: 20px; cursor: pointer;"
+              class="img-thumbnail">
+            <img *ngIf="isEditMap" (click)="canleUpdate(isEditMap=!isEditMap)" src="assets/images/icon_cancle.png" style="height: 35px; width: 35px; position: absolute; right: 15px; top: 20px; cursor: pointer;"
+              class="img-thumbnail">
+
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>
+                    <input *ngIf="isEditMap" [(ngModel)]="keysearch" name="keysearch" type="text" (input)="onSearchChange($event.target.value)"
+                      class="form-control" placeholder="Nhập vị trí">
+                    <div id="myInputautocomplete-list" class="autocomplete-items">
+                      <div *ngFor="let rs of address" id="{{rs.placeid}}&text={{rs.text}}" (click)="clickSearch($event)">
+                        {{rs.text}}
+                      </div>
+                      <div #gmap (click)="clickMap()" style="width:100%; height:400px; margin-top: 10px;"></div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="row" style="margin-right: 10px">
+          <button data-dismiss="modal" class="btn btn-danger">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="confirmdelete" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Thông báo</h4>
+        <button class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        Bạn có chắc chắn muốn xóa tin này khỏi danh sách!
+      </div>
+      <div class="modal-footer">
+        <div class="col-sm-12">
+          <button id="add_lesson" class="col-md-2 btn btn-primary" (click)="confirmDelete()" style="margin-left: 50px" data-dismiss="modal">Có</button>
+          <button class="col-md-2 btn btn-primary" style="margin-left: 150px" data-dismiss="modal">Hủy</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="loader" *ngIf="isLoading" style="position: fixed; top: 40%; left: 50%"></div>

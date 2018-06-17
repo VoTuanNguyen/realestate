@@ -1,0 +1,124 @@
+<div class="container modal-dialog modal-lg" style=" border: solid;">
+  <div>
+    <ul class="nav nav-tabs" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" href="#detail" role="tab" data-toggle="tab">Chi tiết</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#image" role="tab" data-toggle="tab">Hình ảnh</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#map" role="tab" data-toggle="tab">Bản đồ</a>
+      </li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane fade show active" id="detail">
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <div class="row">
+              <div class="col-sm-12 my-3">
+                <div class="card card-body bg-light">
+                  <strong>Thông tin chi tiết</strong>
+                  <table [hidden]="!isLoad" class="table">
+                    <tbody>
+                      <tr>
+                        <td>Tiêu đề</td>
+                        <td>{{details.tieude}}</td>
+                      </tr>
+                      <tr>
+                        <td>Loại bất động sản</td>
+                        <td>{{details.loaibds}}</td>
+                      </tr>
+                      <tr>
+                        <td>Địa chỉ</td>
+                        <td>{{details.diachi}}</td>
+                      </tr>
+                      <tr>
+                        <td>Diện tích</td>
+                        <td>{{details.dientich}}m2({{ details.chieudai }}m X {{ details.chieurong }}m)</td>
+                      </tr>
+                      <tr>
+                        <td>Giá</td>
+                        <td>{{details.gia}} VND</td>
+                      </tr>
+                      <tr>
+                        <td>Ngày đăng</td>
+                        <td>{{details.ngay}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12 my-2">
+                <div class="card card-body bg-light">
+                  <strong>Mô tả thêm</strong>
+                  <div id="motathem" style="margin-top: 10px; margin-left: 10px;">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12 my-2">
+                <div class="card card-body bg-light">
+                  <strong>Thông tin liên hệ</strong>
+                  <table [hidden]="!isLoad" class="table">
+                    <tbody>
+                      <tr>
+                        <td>Họ tên</td>
+                        <td>{{details.hoten}}</td>
+                      </tr>
+                      <tr>
+                        <td>Số điện thoại</td>
+                        <td>{{details.sdt}}</td>
+                      </tr>
+                      <tr>
+                        <td>Email</td>
+                        <td *ngIf="details.email!==''">{{details.email}}</td>
+                        <td *ngIf="details.email===''">Chưa có</td>
+                      </tr>
+                      <tr>
+                        <td>Facebook</td>
+                        <td *ngIf="details.facebook!==''">
+                          <a href="{{details.facebook}}" target="_blank">Xem</a>
+                        </td>
+                        <td *ngIf="details.facebook===''">
+                          Chưa có
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </div>
+      <!-- nội dung tab hình ảnh -->
+      <div role="tabpanel" class="tab-pane fade" id="image">
+        <ngb-carousel>
+          <ng-template ngbSlide *ngFor="let img of imagesUrl">
+            <div class="carousel-caption">
+              <img src="{{img.link}}" alt="Random first slide" style="height: 550px; width: 550px">
+            </div>
+            <img src="https://vignette.wikia.nocookie.net/minecraftcreepypasta/images/3/3c/Solids-black.jpg/revision/latest/scale-to-width-down/640?cb=20161231184957"
+              alt="Random first slide" style="height: 600px; width: 100%">
+          </ng-template>
+        </ngb-carousel>
+      </div>
+      <!-- nội dung map -->
+      <div role="tabpanel" class="tab-pane" id="map">
+        <div #gmap style="width:100%;height:600px"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="loader" [hidden]="isLoad" style="position: fixed; top: 40%; left: 50%"></div>

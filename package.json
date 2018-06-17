@@ -12,6 +12,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular-devkit/core": "^0.6.8",
     "@angular/animations": "^5.0.0",
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
@@ -21,8 +22,17 @@
     "@angular/platform-browser": "^5.0.0",
     "@angular/platform-browser-dynamic": "^5.0.0",
     "@angular/router": "^5.0.0",
+    "@ng-bootstrap/ng-bootstrap": "^2.0.0",
+    "@types/googlemaps": "^3.30.9",
+    "bootstrap": "^4.0.0-alpha.6",
     "core-js": "^2.4.1",
+    "jquery": "^3.3.1",
+    "ngx-ckeditor": "^0.3.2",
+    "ngx-owl-carousel": "^2.0.7",
+    "ngx-pagination": "^3.1.1",
+    "popper.js": "^1.14.3",
     "rxjs": "^5.5.2",
+    "tether": "^1.4.4",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {

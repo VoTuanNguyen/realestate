@@ -1,0 +1,253 @@
+<div *ngIf="!isLoading" class="container-fluid" style="height: 455px; border-bottom: 5px solid #cfae78;">
+  <ngb-carousel>
+    <ng-template ngbSlide>
+      <img src="http://static.tapchitaichinh.vn/660x450/Uploaded/vuminh/2016_11_01/phong-thuy_1phunutodayvn_TETE.jpg" alt="Random first slide"
+        style="height: 450px; width: 100%">
+    </ng-template>
+    <ng-template ngbSlide>
+      <img src="http://3.bp.blogspot.com/-qMqS-vYk92s/VAbG9nN_Z4I/AAAAAAAAApQ/_zo04EvQa2o/s1600/Nh%C3%A0%2B%C4%91%E1%BA%A5t.JPG"
+        alt="Random first slide" style="height: 450px; width: 100%">
+    </ng-template>
+    <ng-template ngbSlide>
+      <img src="http://www.riverapark-hanoi.com.vn/Uploads/banner/DSC_4621-5.jpg" alt="Random first slide" style="height: 450px; width: 100%">
+    </ng-template>
+    <ng-template ngbSlide>
+      <img src="http://www.riverapark-hanoi.com.vn/Uploads/banner/TRC04802-4.jpg" alt="Random first slide" style="height: 450px; width: 100%">
+    </ng-template>
+    <ng-template ngbSlide>
+      <img src="http://www.riverapark-hanoi.com.vn/Uploads/banner/DSC_4391-5.jpg" alt="Random first slide" style="height: 450px; width: 100%">
+    </ng-template>
+    <ng-template ngbSlide>
+      <img src="http://www.riverapark-hanoi.com.vn/Uploads/banner/TRC04803-4.jpg" alt="Random first slide" style="height: 450px; width: 100%">
+    </ng-template>
+  </ngb-carousel>
+</div>
+<div class="container" style="min-height: 500px; position: relative;">
+  <div *ngIf="!isLoading" class="row" style="margin-top: 10px;">
+    <div class="col-sm-3">
+      <select class="form-control" (change)="onChange($event.target.value)">
+        <option selected value="default">Mặc định</option>
+        <option value="increase">Giá từ thấp tới cao</option>
+        <option value="decrease">Giá từ cao xuống thấp</option>
+      </select>
+    </div>
+    <div class="col-sm-2">
+      <select class="form-control" (change)="onChangeCity($event.target.value)">
+        <option selected value="default">Tỉnh/Thành</option>
+        <option *ngFor="let city of tinhthanh" value="{{city.id}}">{{city.tentp}}</option>
+      </select>
+    </div>
+    <div class="col-sm-3">
+      <select class="form-control" (change)="onChangeDistrict($event.target.value)" [disabled]="!isChooseCity">
+        <option selected value="default">Quận/Huyện</option>
+        <option *ngFor="let dis of district" value="{{dis.id}}">{{dis.tenquanhuyen}}</option>
+      </select>
+    </div>
+    <div class="col-sm-2">
+      <select class="form-control" (change)="onChangeDientich($event.target.value)">
+        <option selected value="default">Diện tích</option>
+        <option value="1">
+          < 50m2</option>
+            <option value="2">50 - 100m2</option>
+            <option value="3">100 - 150m2</option>
+            <option value="4">150 - 200m2</option>
+            <option value="5">> 200m2</option>
+      </select>
+    </div>
+    <div class="col-sm-2">
+      <select class="form-control" (change)="onChangeGia($event.target.value)">
+        <option selected value="default">Khoảng giá</option>
+        <option value="1">
+          < 500 triệu</option>
+            <option value="2">500 triệu - 1 tỷ</option>
+            <option value="3">1 - 1,5 tỷ</option>
+            <option value="4">1,5 - 2 tỷ</option>
+            <option value="5">> 2 tỷ</option>
+      </select>
+    </div>
+  </div>
+  <div *ngIf="!isLoading" class="row" style="margin-top:20px;">
+    <div class="outer" style="text-align: center; width: 100%;" *ngIf="isEmpty">
+      <h1>Chưa có dữ liệu!</h1>
+    </div>
+    <div class="col-md-3 col-sm-3" style="margin-bottom: 20px;" *ngFor="let hotel of hotelList | paginate: { itemsPerPage: 8, currentPage: p }">
+      <img src="{{ hotel.link }}" style="height: 300px; width: 250px" class="img-thumbnail">
+      <h6 class="title" style="text-align: center; margin-top: 10px;">{{ hotel.news.tieude.substring(0, 25) }}</h6>
+      <div class="description">
+        <small>
+          <img src="assets/images/location.png" style="height: 20px; width: 20px"> {{ hotel.news.diachi.substring(0, 30) }}...
+        </small>
+        <br>
+        <small>
+          <img src="assets/images/dientich.png" style="height: 20px; width: 20px"> Diện tích: {{hotel.news.dientich}}m2({{ hotel.news.chieudai }}m X {{ hotel.news.chieurong }}m)</small>
+      </div>
+      <div class="price">
+        <h6>Giá:
+          <strong *ngIf="hotel.news.gia/1000000>1&&hotel.news.gia/1000000<1000">{{ hotel.news.gia/1000000 }} Triệu VNĐ</strong>
+          <strong *ngIf="hotel.news.gia/1000000000>1">{{ hotel.news.gia/1000000000 }} Tỷ VNĐ</strong>
+          <strong *ngIf="hotel.news.gia/1000000<1">{{ hotel.news.gia}} VNĐ</strong>
+        </h6>
+      </div>
+      <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+          <button (click)="show($event)" style="cursor: pointer;" data-target="#detailnews" data-toggle="modal" name="{{hotel.news.id}}"
+            class="btn btn-primary btn-block">Xem chi tiết</button>
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row" style="text-align:center;">
+  <div class="col-md-12">
+    <pagination-controls (pageChange)="pageChange(p = $event)"></pagination-controls>
+  </div>
+</div>
+<div id="detailnews" class="modal fade" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h5 *ngIf="isDetail" class="modal-title">{{details.tieude}}</h5>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="tabhead" href="#detail" role="tab" data-toggle="tab">Chi tiết</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#image" role="tab" data-toggle="tab">Hình ảnh</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#map" role="tab" data-toggle="tab">Bản đồ</a>
+          </li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane fade show active" id="detail">
+            <div class="row">
+              <div class="col-md-1"></div>
+              <div class="col-md-10">
+                <div class="row">
+                  <div class="col-sm-12 my-3">
+                    <div class="card card-body bg-light">
+                      <strong>Thông tin chi tiết</strong>
+                      <table *ngIf="isDetail" class="table">
+                        <tbody>
+                          <tr>
+                            <td>Tiêu đề</td>
+                            <td>{{details.tieude}}</td>
+                          </tr>
+                          <tr>
+                            <td>Loại bất động sản</td>
+                            <td>{{details.loaibds}}</td>
+                          </tr>
+                          <tr>
+                            <td>Địa chỉ</td>
+                            <td>{{details.diachi}}</td>
+                          </tr>
+                          <tr>
+                            <td>Diện tích</td>
+                            <td>{{details.dientich}}m2({{ details.chieudai }}m X {{ details.chieurong }}m)</td>
+                          </tr>
+                          <tr>
+                            <td>Giá</td>
+                            <td *ngIf="unit===1">{{details.gia}} VNĐ</td>
+                            <td *ngIf="unit===1000000">{{details.gia/1000000}} Triệu VNĐ</td>
+                            <td *ngIf="unit===1000000000">{{details.gia/1000000000}} Tỷ VNĐ</td>
+                          </tr>
+                          <tr>
+                            <td>Ngày đăng</td>
+                            <td>{{details.ngay}}</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-12 my-2">
+                    <div class="card card-body bg-light">
+                      <strong>Mô tả thêm</strong>
+                      <div id="motathem" style="margin-top: 10px; margin-left: 10px;">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-12 my-2">
+                    <div class="card card-body bg-light">
+                      <strong>Thông tin liên hệ</strong>
+                      <table *ngIf="isDetail" class="table">
+                        <tbody>
+                          <tr>
+                            <td>Họ tên</td>
+                            <td>{{details.hoten}}</td>
+                          </tr>
+                          <tr>
+                            <td>Số điện thoại</td>
+                            <td>{{details.sdt}}</td>
+                          </tr>
+                          <tr>
+                            <td>Email</td>
+                            <td *ngIf="details.email!==''">{{details.email}}</td>
+                            <td *ngIf="details.email===''">Chưa có</td>
+                          </tr>
+                          <tr>
+                            <td>Facebook</td>
+                            <td *ngIf="details.facebook!==''">
+                              <a href="{{details.facebook}}" target="_blank">Xem</a>
+                            </td>
+                            <td *ngIf="details.facebook===''">
+                              Chưa có
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col-md-1"></div>
+            </div>
+          </div>
+          <!-- nội dung tab hình ảnh -->
+          <div role="tabpanel" class="tab-pane fade" id="image">
+            <ngb-carousel>
+              <ng-template ngbSlide *ngFor="let img of imagesUrl">
+                <div class="carousel-caption">
+                  <img src="{{img.link}}" alt="Random first slide" style="height: 400px; width: 350px">
+                </div>
+                <img src="https://vignette.wikia.nocookie.net/minecraftcreepypasta/images/3/3c/Solids-black.jpg/revision/latest/scale-to-width-down/640?cb=20161231184957"
+                  alt="Random first slide" style="height: 450px; width: 100%">
+              </ng-template>
+            </ngb-carousel>
+          </div>
+          <!-- nội dung map -->
+          <div role="tabpanel" class="tab-pane" id="map">
+            <div #gmap style="width:100%;height:450px"></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <div class="container">
+          <div class="row">
+            <div *ngIf="isDetail" class="col-sm-6">
+              <a href="/news/view-detail/{{details.id}}" target="_blank" class="btn btn-primary">Xem ở tab mới</a>
+            </div>
+            <div class="col-sm-6" style="text-align: right">
+              <button data-dismiss="modal" class="btn btn-danger">Đóng</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="loader" *ngIf="isLoading" style="position: fixed; top: 50%; left: 50%"></div>
