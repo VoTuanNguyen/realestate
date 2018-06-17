@@ -1,0 +1,3489 @@
+﻿{
+  "quanhuyen": [
+    {
+      "id": "1",
+      "tenquanhuyen": "Quận Ba Đình",
+      "idtp": "1"
+    },
+    {
+      "id": "2",
+      "tenquanhuyen": "Quận Hoàn Kiếm",
+      "idtp": "1"
+    },
+    {
+      "id": "3",
+      "tenquanhuyen": "Quận Tây Hồ",
+      "idtp": "1"
+    },
+    {
+      "id": "4",
+      "tenquanhuyen": "Quận Long Biên",
+      "idtp": "1"
+    },
+    {
+      "id": "5",
+      "tenquanhuyen": "Quận Cầu Giấy",
+      "idtp": "1"
+    },
+    {
+      "id": "6",
+      "tenquanhuyen": "Quận Đống Đa",
+      "idtp": "1"
+    },
+    {
+      "id": "7",
+      "tenquanhuyen": "Quận Hai Bà Trưng",
+      "idtp": "1"
+    },
+    {
+      "id": "8",
+      "tenquanhuyen": "Quận Hoàng Mai",
+      "idtp": "1"
+    },
+    {
+      "id": "9",
+      "tenquanhuyen": "Quận Thanh Xuân",
+      "idtp": "1"
+    },
+    {
+      "id": "16",
+      "tenquanhuyen": "Sóc Sơn",
+      "idtp": "1"
+    },
+    {
+      "id": "17",
+      "tenquanhuyen": "Đông Anh",
+      "idtp": "1"
+    },
+    {
+      "id": "18",
+      "tenquanhuyen": "Gia Lâm",
+      "idtp": "1"
+    },
+    {
+      "id": "19",
+      "tenquanhuyen": "Từ Liêm",
+      "idtp": "1"
+    },
+    {
+      "id": "20",
+      "tenquanhuyen": "Thanh Trì",
+      "idtp": "1"
+    },
+    {
+      "id": "24",
+      "tenquanhuyen": "Tx.Hà Giang",
+      "idtp": "2"
+    },
+    {
+      "id": "26",
+      "tenquanhuyen": "Đồng Văn",
+      "idtp": "2"
+    },
+    {
+      "id": "27",
+      "tenquanhuyen": "Mèo Vạc",
+      "idtp": "2"
+    },
+    {
+      "id": "28",
+      "tenquanhuyen": "Yên Minh",
+      "idtp": "2"
+    },
+    {
+      "id": "29",
+      "tenquanhuyen": "Quản Bạ",
+      "idtp": "2"
+    },
+    {
+      "id": "30",
+      "tenquanhuyen": "Vị Xuyên",
+      "idtp": "2"
+    },
+    {
+      "id": "31",
+      "tenquanhuyen": "Bắc Mê",
+      "idtp": "2"
+    },
+    {
+      "id": "32",
+      "tenquanhuyen": "Hoàng Su Phì",
+      "idtp": "2"
+    },
+    {
+      "id": "33",
+      "tenquanhuyen": "Xín Mần",
+      "idtp": "2"
+    },
+    {
+      "id": "34",
+      "tenquanhuyen": "Bắc Quang",
+      "idtp": "2"
+    },
+    {
+      "id": "35",
+      "tenquanhuyen": "Quang Bình",
+      "idtp": "2"
+    },
+    {
+      "id": "40",
+      "tenquanhuyen": "Tx.Cao Bằng",
+      "idtp": "3"
+    },
+    {
+      "id": "42",
+      "tenquanhuyen": "Bảo Lâm",
+      "idtp": "3"
+    },
+    {
+      "id": "43",
+      "tenquanhuyen": "Bảo Lạc",
+      "idtp": "3"
+    },
+    {
+      "id": "44",
+      "tenquanhuyen": "Thông Nông",
+      "idtp": "3"
+    },
+    {
+      "id": "45",
+      "tenquanhuyen": "Hà Quảng",
+      "idtp": "3"
+    },
+    {
+      "id": "46",
+      "tenquanhuyen": "Trà Lĩnh",
+      "idtp": "3"
+    },
+    {
+      "id": "47",
+      "tenquanhuyen": "Trùng Khánh",
+      "idtp": "3"
+    },
+    {
+      "id": "48",
+      "tenquanhuyen": "Hạ Lang",
+      "idtp": "3"
+    },
+    {
+      "id": "49",
+      "tenquanhuyen": "Quảng Uyên",
+      "idtp": "3"
+    },
+    {
+      "id": "50",
+      "tenquanhuyen": "Phục Hoà",
+      "idtp": "3"
+    },
+    {
+      "id": "51",
+      "tenquanhuyen": "Hoà An",
+      "idtp": "3"
+    },
+    {
+      "id": "52",
+      "tenquanhuyen": "Nguyên Bình",
+      "idtp": "3"
+    },
+    {
+      "id": "53",
+      "tenquanhuyen": "Thạch An",
+      "idtp": "3"
+    },
+    {
+      "id": "58",
+      "tenquanhuyen": "Tx.Bắc Kạn",
+      "idtp": "4"
+    },
+    {
+      "id": "60",
+      "tenquanhuyen": "Pác Nặm",
+      "idtp": "4"
+    },
+    {
+      "id": "61",
+      "tenquanhuyen": "Ba Bể",
+      "idtp": "4"
+    },
+    {
+      "id": "62",
+      "tenquanhuyen": "Ngân Sơn",
+      "idtp": "4"
+    },
+    {
+      "id": "63",
+      "tenquanhuyen": "Bạch Thông",
+      "idtp": "4"
+    },
+    {
+      "id": "64",
+      "tenquanhuyen": "Chợ Đồn",
+      "idtp": "4"
+    },
+    {
+      "id": "65",
+      "tenquanhuyen": "Chợ Mới",
+      "idtp": "4"
+    },
+    {
+      "id": "66",
+      "tenquanhuyen": "Na Rì",
+      "idtp": "4"
+    },
+    {
+      "id": "70",
+      "tenquanhuyen": "Tx.Tuyên Quang",
+      "idtp": "5"
+    },
+    {
+      "id": "72",
+      "tenquanhuyen": "Nà Hang",
+      "idtp": "5"
+    },
+    {
+      "id": "73",
+      "tenquanhuyen": "Chiêm Hóa",
+      "idtp": "5"
+    },
+    {
+      "id": "74",
+      "tenquanhuyen": "Hàm Yên",
+      "idtp": "5"
+    },
+    {
+      "id": "75",
+      "tenquanhuyen": "Yên Sơn",
+      "idtp": "5"
+    },
+    {
+      "id": "76",
+      "tenquanhuyen": "Sơn Dương",
+      "idtp": "5"
+    },
+    {
+      "id": "80",
+      "tenquanhuyen": "Tp.Lào Cai",
+      "idtp": "6"
+    },
+    {
+      "id": "82",
+      "tenquanhuyen": "Bát Xát",
+      "idtp": "6"
+    },
+    {
+      "id": "83",
+      "tenquanhuyen": "Mường Khương",
+      "idtp": "6"
+    },
+    {
+      "id": "84",
+      "tenquanhuyen": "Si Ma Cai",
+      "idtp": "6"
+    },
+    {
+      "id": "85",
+      "tenquanhuyen": "Bắc Hà",
+      "idtp": "6"
+    },
+    {
+      "id": "86",
+      "tenquanhuyen": "Bảo Thắng",
+      "idtp": "6"
+    },
+    {
+      "id": "87",
+      "tenquanhuyen": "Bảo Yên",
+      "idtp": "6"
+    },
+    {
+      "id": "88",
+      "tenquanhuyen": "Sa Pa",
+      "idtp": "6"
+    },
+    {
+      "id": "89",
+      "tenquanhuyen": "Văn Bàn",
+      "idtp": "6"
+    },
+    {
+      "id": "94",
+      "tenquanhuyen": "Tp.Điện Biên Phủ",
+      "idtp": "7"
+    },
+    {
+      "id": "95",
+      "tenquanhuyen": "Tx.Mường Lay",
+      "idtp": "7"
+    },
+    {
+      "id": "96",
+      "tenquanhuyen": "Mường Nhé",
+      "idtp": "7"
+    },
+    {
+      "id": "97",
+      "tenquanhuyen": "Mường Chà",
+      "idtp": "7"
+    },
+    {
+      "id": "98",
+      "tenquanhuyen": "Tủa Chùa",
+      "idtp": "7"
+    },
+    {
+      "id": "99",
+      "tenquanhuyen": "Tuần Giáo",
+      "idtp": "7"
+    },
+    {
+      "id": "100",
+      "tenquanhuyen": "Điện Biên",
+      "idtp": "7"
+    },
+    {
+      "id": "101",
+      "tenquanhuyen": "Điện Biên Đông",
+      "idtp": "7"
+    },
+    {
+      "id": "102",
+      "tenquanhuyen": "Mường Ảng",
+      "idtp": "7"
+    },
+    {
+      "id": "104",
+      "tenquanhuyen": "Tx.Lai Châu",
+      "idtp": "8"
+    },
+    {
+      "id": "106",
+      "tenquanhuyen": "Tam Đường",
+      "idtp": "8"
+    },
+    {
+      "id": "107",
+      "tenquanhuyen": "Mường Tè",
+      "idtp": "8"
+    },
+    {
+      "id": "108",
+      "tenquanhuyen": "Sìn Hồ",
+      "idtp": "8"
+    },
+    {
+      "id": "109",
+      "tenquanhuyen": "Phong Thổ",
+      "idtp": "8"
+    },
+    {
+      "id": "110",
+      "tenquanhuyen": "Than Uyên",
+      "idtp": "8"
+    },
+    {
+      "id": "111",
+      "tenquanhuyen": "Tân Uyên",
+      "idtp": "8"
+    },
+    {
+      "id": "116",
+      "tenquanhuyen": "Tp.Sơn La",
+      "idtp": "9"
+    },
+    {
+      "id": "118",
+      "tenquanhuyen": "Quỳnh Nhai",
+      "idtp": "9"
+    },
+    {
+      "id": "119",
+      "tenquanhuyen": "Thuận Châu",
+      "idtp": "9"
+    },
+    {
+      "id": "120",
+      "tenquanhuyen": "Mường La",
+      "idtp": "9"
+    },
+    {
+      "id": "121",
+      "tenquanhuyen": "Bắc Yên",
+      "idtp": "9"
+    },
+    {
+      "id": "122",
+      "tenquanhuyen": "Phù Yên",
+      "idtp": "9"
+    },
+    {
+      "id": "123",
+      "tenquanhuyen": "Mộc Châu",
+      "idtp": "9"
+    },
+    {
+      "id": "124",
+      "tenquanhuyen": "Yên Châu",
+      "idtp": "9"
+    },
+    {
+      "id": "125",
+      "tenquanhuyen": "Mai Sơn",
+      "idtp": "9"
+    },
+    {
+      "id": "126",
+      "tenquanhuyen": "Sông Mã",
+      "idtp": "9"
+    },
+    {
+      "id": "127",
+      "tenquanhuyen": "Sốp Cộp",
+      "idtp": "9"
+    },
+    {
+      "id": "132",
+      "tenquanhuyen": "Tp.Yên Bái",
+      "idtp": "10"
+    },
+    {
+      "id": "133",
+      "tenquanhuyen": "Tx.Nghĩa Lộ",
+      "idtp": "10"
+    },
+    {
+      "id": "135",
+      "tenquanhuyen": "Lục Yên",
+      "idtp": "10"
+    },
+    {
+      "id": "136",
+      "tenquanhuyen": "Văn Yên",
+      "idtp": "10"
+    },
+    {
+      "id": "137",
+      "tenquanhuyen": "Mù Cang Chải",
+      "idtp": "10"
+    },
+    {
+      "id": "138",
+      "tenquanhuyen": "Trấn Yên",
+      "idtp": "10"
+    },
+    {
+      "id": "139",
+      "tenquanhuyen": "Trạm Tấu",
+      "idtp": "10"
+    },
+    {
+      "id": "140",
+      "tenquanhuyen": "Văn Chấn",
+      "idtp": "10"
+    },
+    {
+      "id": "141",
+      "tenquanhuyen": "Yên Bình",
+      "idtp": "10"
+    },
+    {
+      "id": "148",
+      "tenquanhuyen": "Tp.Hòa Bình",
+      "idtp": "11"
+    },
+    {
+      "id": "150",
+      "tenquanhuyen": "Đà Bắc",
+      "idtp": "11"
+    },
+    {
+      "id": "151",
+      "tenquanhuyen": "Kỳ Sơn",
+      "idtp": "11"
+    },
+    {
+      "id": "152",
+      "tenquanhuyen": "Lương Sơn",
+      "idtp": "11"
+    },
+    {
+      "id": "153",
+      "tenquanhuyen": "Kim Bôi",
+      "idtp": "11"
+    },
+    {
+      "id": "154",
+      "tenquanhuyen": "Cao Phong",
+      "idtp": "11"
+    },
+    {
+      "id": "155",
+      "tenquanhuyen": "Tân Lạc",
+      "idtp": "11"
+    },
+    {
+      "id": "156",
+      "tenquanhuyen": "Mai Châu",
+      "idtp": "11"
+    },
+    {
+      "id": "157",
+      "tenquanhuyen": "Lạc Sơn",
+      "idtp": "11"
+    },
+    {
+      "id": "158",
+      "tenquanhuyen": "Yên Thủy",
+      "idtp": "11"
+    },
+    {
+      "id": "159",
+      "tenquanhuyen": "Lạc Thủy",
+      "idtp": "11"
+    },
+    {
+      "id": "164",
+      "tenquanhuyen": "Tp.Thái Nguyên",
+      "idtp": "12"
+    },
+    {
+      "id": "165",
+      "tenquanhuyen": "Tx.Sông Công",
+      "idtp": "12"
+    },
+    {
+      "id": "167",
+      "tenquanhuyen": "Định Hóa",
+      "idtp": "12"
+    },
+    {
+      "id": "168",
+      "tenquanhuyen": "Phú Lương",
+      "idtp": "12"
+    },
+    {
+      "id": "169",
+      "tenquanhuyen": "Đồng Hỷ",
+      "idtp": "12"
+    },
+    {
+      "id": "170",
+      "tenquanhuyen": "Võ Nhai",
+      "idtp": "12"
+    },
+    {
+      "id": "171",
+      "tenquanhuyen": "Đại Từ",
+      "idtp": "12"
+    },
+    {
+      "id": "172",
+      "tenquanhuyen": "Phổ Yên",
+      "idtp": "12"
+    },
+    {
+      "id": "173",
+      "tenquanhuyen": "Phú Bình",
+      "idtp": "12"
+    },
+    {
+      "id": "178",
+      "tenquanhuyen": "Tp.Lạng Sơn",
+      "idtp": "13"
+    },
+    {
+      "id": "180",
+      "tenquanhuyen": "Tràng Định",
+      "idtp": "13"
+    },
+    {
+      "id": "181",
+      "tenquanhuyen": "Bình Gia",
+      "idtp": "13"
+    },
+    {
+      "id": "182",
+      "tenquanhuyen": "Văn Lãng",
+      "idtp": "13"
+    },
+    {
+      "id": "183",
+      "tenquanhuyen": "Cao Lộc",
+      "idtp": "13"
+    },
+    {
+      "id": "184",
+      "tenquanhuyen": "Văn Quan",
+      "idtp": "13"
+    },
+    {
+      "id": "185",
+      "tenquanhuyen": "Bắc Sơn",
+      "idtp": "13"
+    },
+    {
+      "id": "186",
+      "tenquanhuyen": "Hữu Lũng",
+      "idtp": "13"
+    },
+    {
+      "id": "187",
+      "tenquanhuyen": "Chi Lăng",
+      "idtp": "13"
+    },
+    {
+      "id": "188",
+      "tenquanhuyen": "Lộc Bình",
+      "idtp": "13"
+    },
+    {
+      "id": "189",
+      "tenquanhuyen": "Đình Lập",
+      "idtp": "13"
+    },
+    {
+      "id": "193",
+      "tenquanhuyen": "Tp.Hạ Long",
+      "idtp": "14"
+    },
+    {
+      "id": "194",
+      "tenquanhuyen": "Tp.Móng Cái",
+      "idtp": "14"
+    },
+    {
+      "id": "195",
+      "tenquanhuyen": "Tx.Cẩm Phả",
+      "idtp": "14"
+    },
+    {
+      "id": "196",
+      "tenquanhuyen": "Tx.Uông Bí",
+      "idtp": "14"
+    },
+    {
+      "id": "198",
+      "tenquanhuyen": "Bình Liêu",
+      "idtp": "14"
+    },
+    {
+      "id": "199",
+      "tenquanhuyen": "Tiên Yên",
+      "idtp": "14"
+    },
+    {
+      "id": "200",
+      "tenquanhuyen": "Đầm Hà",
+      "idtp": "14"
+    },
+    {
+      "id": "201",
+      "tenquanhuyen": "Hải Hà",
+      "idtp": "14"
+    },
+    {
+      "id": "202",
+      "tenquanhuyen": "Ba Chẽ",
+      "idtp": "14"
+    },
+    {
+      "id": "203",
+      "tenquanhuyen": "Vân Đồn",
+      "idtp": "14"
+    },
+    {
+      "id": "204",
+      "tenquanhuyen": "Hoành Bồ",
+      "idtp": "14"
+    },
+    {
+      "id": "205",
+      "tenquanhuyen": "Đông Triều",
+      "idtp": "14"
+    },
+    {
+      "id": "206",
+      "tenquanhuyen": "Yên Hưng",
+      "idtp": "14"
+    },
+    {
+      "id": "207",
+      "tenquanhuyen": "Cô Tô",
+      "idtp": "14"
+    },
+    {
+      "id": "213",
+      "tenquanhuyen": "Tp.Bắc Giang",
+      "idtp": "15"
+    },
+    {
+      "id": "215",
+      "tenquanhuyen": "Yên Thế",
+      "idtp": "15"
+    },
+    {
+      "id": "216",
+      "tenquanhuyen": "Tân Yên",
+      "idtp": "15"
+    },
+    {
+      "id": "217",
+      "tenquanhuyen": "Lạng Giang",
+      "idtp": "15"
+    },
+    {
+      "id": "218",
+      "tenquanhuyen": "Lục Nam",
+      "idtp": "15"
+    },
+    {
+      "id": "219",
+      "tenquanhuyen": "Lục Ngạn",
+      "idtp": "15"
+    },
+    {
+      "id": "220",
+      "tenquanhuyen": "Sơn Động",
+      "idtp": "15"
+    },
+    {
+      "id": "221",
+      "tenquanhuyen": "Yên Dũng",
+      "idtp": "15"
+    },
+    {
+      "id": "222",
+      "tenquanhuyen": "Việt Yên",
+      "idtp": "15"
+    },
+    {
+      "id": "223",
+      "tenquanhuyen": "Hiệp Hòa",
+      "idtp": "15"
+    },
+    {
+      "id": "227",
+      "tenquanhuyen": "Tp.Việt Trì",
+      "idtp": "16"
+    },
+    {
+      "id": "228",
+      "tenquanhuyen": "Tx.Phú Thọ",
+      "idtp": "16"
+    },
+    {
+      "id": "230",
+      "tenquanhuyen": "Đoan Hùng",
+      "idtp": "16"
+    },
+    {
+      "id": "231",
+      "tenquanhuyen": "Hạ Hoà",
+      "idtp": "16"
+    },
+    {
+      "id": "232",
+      "tenquanhuyen": "Thanh Ba",
+      "idtp": "16"
+    },
+    {
+      "id": "233",
+      "tenquanhuyen": "Phù Ninh",
+      "idtp": "16"
+    },
+    {
+      "id": "234",
+      "tenquanhuyen": "Yên Lập",
+      "idtp": "16"
+    },
+    {
+      "id": "235",
+      "tenquanhuyen": "Cẩm Khê",
+      "idtp": "16"
+    },
+    {
+      "id": "236",
+      "tenquanhuyen": "Tam Nông",
+      "idtp": "16"
+    },
+    {
+      "id": "237",
+      "tenquanhuyen": "Lâm Thao",
+      "idtp": "16"
+    },
+    {
+      "id": "238",
+      "tenquanhuyen": "Thanh Sơn",
+      "idtp": "16"
+    },
+    {
+      "id": "239",
+      "tenquanhuyen": "Thanh Thuỷ",
+      "idtp": "16"
+    },
+    {
+      "id": "240",
+      "tenquanhuyen": "Tân Sơn",
+      "idtp": "16"
+    },
+    {
+      "id": "243",
+      "tenquanhuyen": "Tp.Vĩnh Yên",
+      "idtp": "17"
+    },
+    {
+      "id": "244",
+      "tenquanhuyen": "Tx.Phúc Yên",
+      "idtp": "17"
+    },
+    {
+      "id": "246",
+      "tenquanhuyen": "Lập Thạch",
+      "idtp": "17"
+    },
+    {
+      "id": "247",
+      "tenquanhuyen": "Tam Dương",
+      "idtp": "17"
+    },
+    {
+      "id": "248",
+      "tenquanhuyen": "Tam Đảo",
+      "idtp": "17"
+    },
+    {
+      "id": "249",
+      "tenquanhuyen": "Bình Xuyên",
+      "idtp": "17"
+    },
+    {
+      "id": "250",
+      "tenquanhuyen": "Mê Linh",
+      "idtp": "1"
+    },
+    {
+      "id": "251",
+      "tenquanhuyen": "Yên Lạc",
+      "idtp": "17"
+    },
+    {
+      "id": "252",
+      "tenquanhuyen": "Vĩnh Tường",
+      "idtp": "17"
+    },
+    {
+      "id": "253",
+      "tenquanhuyen": "Sông Lô",
+      "idtp": "17"
+    },
+    {
+      "id": "256",
+      "tenquanhuyen": "Tp.Bắc Ninh",
+      "idtp": "18"
+    },
+    {
+      "id": "258",
+      "tenquanhuyen": "Yên Phong",
+      "idtp": "18"
+    },
+    {
+      "id": "259",
+      "tenquanhuyen": "Quế Võ",
+      "idtp": "18"
+    },
+    {
+      "id": "260",
+      "tenquanhuyen": "Tiên Du",
+      "idtp": "18"
+    },
+    {
+      "id": "261",
+      "tenquanhuyen": "Tx.Từ Sơn",
+      "idtp": "18"
+    },
+    {
+      "id": "262",
+      "tenquanhuyen": "Thuận Thành",
+      "idtp": "18"
+    },
+    {
+      "id": "263",
+      "tenquanhuyen": "Gia Bình",
+      "idtp": "18"
+    },
+    {
+      "id": "264",
+      "tenquanhuyen": "Lương Tài",
+      "idtp": "18"
+    },
+    {
+      "id": "268",
+      "tenquanhuyen": "Quận Hà Đông",
+      "idtp": "1"
+    },
+    {
+      "id": "269",
+      "tenquanhuyen": "Tx.Sơn Tây",
+      "idtp": "1"
+    },
+    {
+      "id": "271",
+      "tenquanhuyen": "Ba Vì",
+      "idtp": "1"
+    },
+    {
+      "id": "272",
+      "tenquanhuyen": "Phúc Thọ",
+      "idtp": "1"
+    },
+    {
+      "id": "273",
+      "tenquanhuyen": "Đan Phượng",
+      "idtp": "1"
+    },
+    {
+      "id": "274",
+      "tenquanhuyen": "Hoài Đức",
+      "idtp": "1"
+    },
+    {
+      "id": "275",
+      "tenquanhuyen": "Quốc Oai",
+      "idtp": "1"
+    },
+    {
+      "id": "276",
+      "tenquanhuyen": "Thạch Thất",
+      "idtp": "1"
+    },
+    {
+      "id": "277",
+      "tenquanhuyen": "Chương Mỹ",
+      "idtp": "1"
+    },
+    {
+      "id": "278",
+      "tenquanhuyen": "Thanh Oai",
+      "idtp": "1"
+    },
+    {
+      "id": "279",
+      "tenquanhuyen": "Thường Tín",
+      "idtp": "1"
+    },
+    {
+      "id": "280",
+      "tenquanhuyen": "Phú Xuyên",
+      "idtp": "1"
+    },
+    {
+      "id": "281",
+      "tenquanhuyen": "Ứng Hòa",
+      "idtp": "1"
+    },
+    {
+      "id": "282",
+      "tenquanhuyen": "Mỹ Đức",
+      "idtp": "1"
+    },
+    {
+      "id": "288",
+      "tenquanhuyen": "Tp.Hải Dương",
+      "idtp": "19"
+    },
+    {
+      "id": "290",
+      "tenquanhuyen": "Chí Linh",
+      "idtp": "19"
+    },
+    {
+      "id": "291",
+      "tenquanhuyen": "Nam Sách",
+      "idtp": "19"
+    },
+    {
+      "id": "292",
+      "tenquanhuyen": "Kinh Môn",
+      "idtp": "19"
+    },
+    {
+      "id": "293",
+      "tenquanhuyen": "Kim Thành",
+      "idtp": "19"
+    },
+    {
+      "id": "294",
+      "tenquanhuyen": "Thanh Hà",
+      "idtp": "19"
+    },
+    {
+      "id": "295",
+      "tenquanhuyen": "Cẩm Giàng",
+      "idtp": "19"
+    },
+    {
+      "id": "296",
+      "tenquanhuyen": "Bình Giang",
+      "idtp": "19"
+    },
+    {
+      "id": "297",
+      "tenquanhuyen": "Gia Lộc",
+      "idtp": "19"
+    },
+    {
+      "id": "298",
+      "tenquanhuyen": "Tứ Kỳ",
+      "idtp": "19"
+    },
+    {
+      "id": "299",
+      "tenquanhuyen": "Ninh Giang",
+      "idtp": "19"
+    },
+    {
+      "id": "300",
+      "tenquanhuyen": "Thanh Miện",
+      "idtp": "19"
+    },
+    {
+      "id": "303",
+      "tenquanhuyen": "Quận Hồng Bàng",
+      "idtp": "20"
+    },
+    {
+      "id": "304",
+      "tenquanhuyen": "Quận Ngô Quyền",
+      "idtp": "20"
+    },
+    {
+      "id": "305",
+      "tenquanhuyen": "Quận Lê Chân",
+      "idtp": "20"
+    },
+    {
+      "id": "306",
+      "tenquanhuyen": "Quận Hải An",
+      "idtp": "20"
+    },
+    {
+      "id": "307",
+      "tenquanhuyen": "Quận Kiến An",
+      "idtp": "20"
+    },
+    {
+      "id": "308",
+      "tenquanhuyen": "Quận Đồ Sơn",
+      "idtp": "20"
+    },
+    {
+      "id": "309",
+      "tenquanhuyen": "Quận Kinh Dương",
+      "idtp": "20"
+    },
+    {
+      "id": "311",
+      "tenquanhuyen": "Thuỷ Nguyên",
+      "idtp": "20"
+    },
+    {
+      "id": "312",
+      "tenquanhuyen": "An Dương",
+      "idtp": "20"
+    },
+    {
+      "id": "313",
+      "tenquanhuyen": "An Lão",
+      "idtp": "20"
+    },
+    {
+      "id": "314",
+      "tenquanhuyen": "Kiến Thụy",
+      "idtp": "20"
+    },
+    {
+      "id": "315",
+      "tenquanhuyen": "Tiên Lãng",
+      "idtp": "20"
+    },
+    {
+      "id": "316",
+      "tenquanhuyen": "Vĩnh Bảo",
+      "idtp": "20"
+    },
+    {
+      "id": "317",
+      "tenquanhuyen": "Cát Hải",
+      "idtp": "20"
+    },
+    {
+      "id": "318",
+      "tenquanhuyen": "Bạch Long Vĩ",
+      "idtp": "20"
+    },
+    {
+      "id": "323",
+      "tenquanhuyen": "Tp.Hưng Yên",
+      "idtp": "21"
+    },
+    {
+      "id": "325",
+      "tenquanhuyen": "Văn Lâm",
+      "idtp": "21"
+    },
+    {
+      "id": "326",
+      "tenquanhuyen": "Văn Giang",
+      "idtp": "21"
+    },
+    {
+      "id": "327",
+      "tenquanhuyen": "Yên Mỹ",
+      "idtp": "21"
+    },
+    {
+      "id": "328",
+      "tenquanhuyen": "Mỹ Hào",
+      "idtp": "21"
+    },
+    {
+      "id": "329",
+      "tenquanhuyen": "Ân Thi",
+      "idtp": "21"
+    },
+    {
+      "id": "330",
+      "tenquanhuyen": "Khoái Châu",
+      "idtp": "21"
+    },
+    {
+      "id": "331",
+      "tenquanhuyen": "Kim Động",
+      "idtp": "21"
+    },
+    {
+      "id": "332",
+      "tenquanhuyen": "Tiên Lữ",
+      "idtp": "21"
+    },
+    {
+      "id": "333",
+      "tenquanhuyen": "Phù Cừ",
+      "idtp": "21"
+    },
+    {
+      "id": "336",
+      "tenquanhuyen": "Tp.Thái Bình",
+      "idtp": "22"
+    },
+    {
+      "id": "338",
+      "tenquanhuyen": "Quỳnh Phụ",
+      "idtp": "22"
+    },
+    {
+      "id": "339",
+      "tenquanhuyen": "Hưng Hà",
+      "idtp": "22"
+    },
+    {
+      "id": "340",
+      "tenquanhuyen": "Đông Hưng",
+      "idtp": "22"
+    },
+    {
+      "id": "341",
+      "tenquanhuyen": "Thái Thụy",
+      "idtp": "22"
+    },
+    {
+      "id": "342",
+      "tenquanhuyen": "Tiền Hải",
+      "idtp": "22"
+    },
+    {
+      "id": "343",
+      "tenquanhuyen": "Kiến Xương",
+      "idtp": "22"
+    },
+    {
+      "id": "344",
+      "tenquanhuyen": "Vũ Thư",
+      "idtp": "22"
+    },
+    {
+      "id": "347",
+      "tenquanhuyen": "Tp.Phủ Lý",
+      "idtp": "23"
+    },
+    {
+      "id": "349",
+      "tenquanhuyen": "Duy Tiên",
+      "idtp": "23"
+    },
+    {
+      "id": "350",
+      "tenquanhuyen": "Kim Bảng",
+      "idtp": "23"
+    },
+    {
+      "id": "351",
+      "tenquanhuyen": "Thanh Liêm",
+      "idtp": "23"
+    },
+    {
+      "id": "352",
+      "tenquanhuyen": "Bình Lục",
+      "idtp": "23"
+    },
+    {
+      "id": "353",
+      "tenquanhuyen": "Lý Nhân",
+      "idtp": "23"
+    },
+    {
+      "id": "356",
+      "tenquanhuyen": "Tp.Nam Định",
+      "idtp": "24"
+    },
+    {
+      "id": "358",
+      "tenquanhuyen": "Mỹ Lộc",
+      "idtp": "24"
+    },
+    {
+      "id": "359",
+      "tenquanhuyen": "Vụ Bản",
+      "idtp": "24"
+    },
+    {
+      "id": "360",
+      "tenquanhuyen": "Ý Yên",
+      "idtp": "24"
+    },
+    {
+      "id": "361",
+      "tenquanhuyen": "Nghĩa Hưng",
+      "idtp": "24"
+    },
+    {
+      "id": "362",
+      "tenquanhuyen": "Nam Trực",
+      "idtp": "24"
+    },
+    {
+      "id": "363",
+      "tenquanhuyen": "Trực Ninh",
+      "idtp": "24"
+    },
+    {
+      "id": "364",
+      "tenquanhuyen": "Xuân Trường",
+      "idtp": "24"
+    },
+    {
+      "id": "365",
+      "tenquanhuyen": "Giao Thủy",
+      "idtp": "24"
+    },
+    {
+      "id": "366",
+      "tenquanhuyen": "Hải Hậu",
+      "idtp": "24"
+    },
+    {
+      "id": "369",
+      "tenquanhuyen": "Tp.Ninh Bình",
+      "idtp": "25"
+    },
+    {
+      "id": "370",
+      "tenquanhuyen": "Tx.Tam Điệp",
+      "idtp": "25"
+    },
+    {
+      "id": "372",
+      "tenquanhuyen": "Nho Quan",
+      "idtp": "25"
+    },
+    {
+      "id": "373",
+      "tenquanhuyen": "Gia Viễn",
+      "idtp": "25"
+    },
+    {
+      "id": "374",
+      "tenquanhuyen": "Hoa Lư",
+      "idtp": "25"
+    },
+    {
+      "id": "375",
+      "tenquanhuyen": "Yên Khánh",
+      "idtp": "25"
+    },
+    {
+      "id": "376",
+      "tenquanhuyen": "Kim Sơn",
+      "idtp": "25"
+    },
+    {
+      "id": "377",
+      "tenquanhuyen": "Yên Mô",
+      "idtp": "25"
+    },
+    {
+      "id": "380",
+      "tenquanhuyen": "Tp.Thanh Hóa",
+      "idtp": "26"
+    },
+    {
+      "id": "381",
+      "tenquanhuyen": "Tx.Bỉm Sơn",
+      "idtp": "26"
+    },
+    {
+      "id": "382",
+      "tenquanhuyen": "Tx.Sầm Sơn",
+      "idtp": "26"
+    },
+    {
+      "id": "384",
+      "tenquanhuyen": "Mường Lát",
+      "idtp": "26"
+    },
+    {
+      "id": "385",
+      "tenquanhuyen": "Quan Hóa",
+      "idtp": "26"
+    },
+    {
+      "id": "386",
+      "tenquanhuyen": "Bá Thước",
+      "idtp": "26"
+    },
+    {
+      "id": "387",
+      "tenquanhuyen": "Quan Sơn",
+      "idtp": "26"
+    },
+    {
+      "id": "388",
+      "tenquanhuyen": "Lang Chánh",
+      "idtp": "26"
+    },
+    {
+      "id": "389",
+      "tenquanhuyen": "Ngọc Lặc",
+      "idtp": "26"
+    },
+    {
+      "id": "390",
+      "tenquanhuyen": "Cẩm Thủy",
+      "idtp": "26"
+    },
+    {
+      "id": "391",
+      "tenquanhuyen": "Thạch Thành",
+      "idtp": "26"
+    },
+    {
+      "id": "392",
+      "tenquanhuyen": "Hà Trung",
+      "idtp": "26"
+    },
+    {
+      "id": "393",
+      "tenquanhuyen": "Vĩnh Lộc",
+      "idtp": "26"
+    },
+    {
+      "id": "394",
+      "tenquanhuyen": "Yên Định",
+      "idtp": "26"
+    },
+    {
+      "id": "395",
+      "tenquanhuyen": "Thọ Xuân",
+      "idtp": "26"
+    },
+    {
+      "id": "396",
+      "tenquanhuyen": "Thường Xuân",
+      "idtp": "26"
+    },
+    {
+      "id": "397",
+      "tenquanhuyen": "Triệu Sơn",
+      "idtp": "26"
+    },
+    {
+      "id": "398",
+      "tenquanhuyen": "Thiệu Hoá",
+      "idtp": "26"
+    },
+    {
+      "id": "399",
+      "tenquanhuyen": "Hoằng Hóa",
+      "idtp": "26"
+    },
+    {
+      "id": "400",
+      "tenquanhuyen": "Hậu Lộc",
+      "idtp": "26"
+    },
+    {
+      "id": "401",
+      "tenquanhuyen": "Nga Sơn",
+      "idtp": "26"
+    },
+    {
+      "id": "402",
+      "tenquanhuyen": "Như Xuân",
+      "idtp": "26"
+    },
+    {
+      "id": "403",
+      "tenquanhuyen": "Như Thanh",
+      "idtp": "26"
+    },
+    {
+      "id": "404",
+      "tenquanhuyen": "Nông Cống",
+      "idtp": "26"
+    },
+    {
+      "id": "405",
+      "tenquanhuyen": "Đông Sơn",
+      "idtp": "26"
+    },
+    {
+      "id": "406",
+      "tenquanhuyen": "Quảng Xương",
+      "idtp": "26"
+    },
+    {
+      "id": "407",
+      "tenquanhuyen": "Tĩnh Gia",
+      "idtp": "26"
+    },
+    {
+      "id": "412",
+      "tenquanhuyen": "Tp.Vinh",
+      "idtp": "27"
+    },
+    {
+      "id": "413",
+      "tenquanhuyen": "Tx.Cửa Lò",
+      "idtp": "27"
+    },
+    {
+      "id": "414",
+      "tenquanhuyen": "Tx.Thái Hoà",
+      "idtp": "27"
+    },
+    {
+      "id": "415",
+      "tenquanhuyen": "Quế Phong",
+      "idtp": "27"
+    },
+    {
+      "id": "416",
+      "tenquanhuyen": "Quỳ Châu",
+      "idtp": "27"
+    },
+    {
+      "id": "417",
+      "tenquanhuyen": "Kỳ Sơn",
+      "idtp": "27"
+    },
+    {
+      "id": "418",
+      "tenquanhuyen": "Tương Dương",
+      "idtp": "27"
+    },
+    {
+      "id": "419",
+      "tenquanhuyen": "Nghĩa Đàn",
+      "idtp": "27"
+    },
+    {
+      "id": "420",
+      "tenquanhuyen": "Quỳ Hợp",
+      "idtp": "27"
+    },
+    {
+      "id": "421",
+      "tenquanhuyen": "Quỳnh Lưu",
+      "idtp": "27"
+    },
+    {
+      "id": "422",
+      "tenquanhuyen": "Con Cuông",
+      "idtp": "27"
+    },
+    {
+      "id": "423",
+      "tenquanhuyen": "Tân Kỳ",
+      "idtp": "27"
+    },
+    {
+      "id": "424",
+      "tenquanhuyen": "Anh Sơn",
+      "idtp": "27"
+    },
+    {
+      "id": "425",
+      "tenquanhuyen": "Diễn Châu",
+      "idtp": "27"
+    },
+    {
+      "id": "426",
+      "tenquanhuyen": "Yên Thành",
+      "idtp": "27"
+    },
+    {
+      "id": "427",
+      "tenquanhuyen": "Đô Lương",
+      "idtp": "27"
+    },
+    {
+      "id": "428",
+      "tenquanhuyen": "Thanh Chương",
+      "idtp": "27"
+    },
+    {
+      "id": "429",
+      "tenquanhuyen": "Nghi Lộc",
+      "idtp": "27"
+    },
+    {
+      "id": "430",
+      "tenquanhuyen": "Nam Đàn",
+      "idtp": "27"
+    },
+    {
+      "id": "431",
+      "tenquanhuyen": "Hưng Nguyên",
+      "idtp": "27"
+    },
+    {
+      "id": "436",
+      "tenquanhuyen": "Tp.Hà Tĩnh",
+      "idtp": "28"
+    },
+    {
+      "id": "437",
+      "tenquanhuyen": "Tx.Hồng Lĩnh",
+      "idtp": "28"
+    },
+    {
+      "id": "439",
+      "tenquanhuyen": "Hương Sơn",
+      "idtp": "28"
+    },
+    {
+      "id": "440",
+      "tenquanhuyen": "Đức Thọ",
+      "idtp": "28"
+    },
+    {
+      "id": "441",
+      "tenquanhuyen": "Vũ Quang",
+      "idtp": "28"
+    },
+    {
+      "id": "442",
+      "tenquanhuyen": "Nghi Xuân",
+      "idtp": "28"
+    },
+    {
+      "id": "443",
+      "tenquanhuyen": "Can Lộc",
+      "idtp": "28"
+    },
+    {
+      "id": "444",
+      "tenquanhuyen": "Hương Khê",
+      "idtp": "28"
+    },
+    {
+      "id": "445",
+      "tenquanhuyen": "Thạch Hà",
+      "idtp": "28"
+    },
+    {
+      "id": "446",
+      "tenquanhuyen": "Cẩm Xuyên",
+      "idtp": "28"
+    },
+    {
+      "id": "447",
+      "tenquanhuyen": "Kỳ Anh",
+      "idtp": "28"
+    },
+    {
+      "id": "448",
+      "tenquanhuyen": "Lộc Hà",
+      "idtp": "28"
+    },
+    {
+      "id": "450",
+      "tenquanhuyen": "Tp.Đồng Hới",
+      "idtp": "29"
+    },
+    {
+      "id": "452",
+      "tenquanhuyen": "Minh Hóa",
+      "idtp": "29"
+    },
+    {
+      "id": "453",
+      "tenquanhuyen": "Tuyên Hóa",
+      "idtp": "29"
+    },
+    {
+      "id": "454",
+      "tenquanhuyen": "Quảng Trạch",
+      "idtp": "29"
+    },
+    {
+      "id": "455",
+      "tenquanhuyen": "Bố Trạch",
+      "idtp": "29"
+    },
+    {
+      "id": "456",
+      "tenquanhuyen": "Quảng Ninh",
+      "idtp": "29"
+    },
+    {
+      "id": "457",
+      "tenquanhuyen": "Lệ Thủy",
+      "idtp": "29"
+    },
+    {
+      "id": "461",
+      "tenquanhuyen": "Tp.Đông Hà",
+      "idtp": "30"
+    },
+    {
+      "id": "462",
+      "tenquanhuyen": "Tx.Quảng Trị",
+      "idtp": "30"
+    },
+    {
+      "id": "464",
+      "tenquanhuyen": "Vĩnh Linh",
+      "idtp": "30"
+    },
+    {
+      "id": "465",
+      "tenquanhuyen": "Hướng Hóa",
+      "idtp": "30"
+    },
+    {
+      "id": "466",
+      "tenquanhuyen": "Gio Linh",
+      "idtp": "30"
+    },
+    {
+      "id": "467",
+      "tenquanhuyen": "Đa Krông",
+      "idtp": "30"
+    },
+    {
+      "id": "468",
+      "tenquanhuyen": "Cam Lộ",
+      "idtp": "30"
+    },
+    {
+      "id": "469",
+      "tenquanhuyen": "Triệu Phong",
+      "idtp": "30"
+    },
+    {
+      "id": "470",
+      "tenquanhuyen": "Hải Lăng",
+      "idtp": "30"
+    },
+    {
+      "id": "471",
+      "tenquanhuyen": "Cồn Cỏ",
+      "idtp": "30"
+    },
+    {
+      "id": "474",
+      "tenquanhuyen": "Tp.Huế",
+      "idtp": "31"
+    },
+    {
+      "id": "476",
+      "tenquanhuyen": "Phong Điền",
+      "idtp": "31"
+    },
+    {
+      "id": "477",
+      "tenquanhuyen": "Quảng Điền",
+      "idtp": "31"
+    },
+    {
+      "id": "478",
+      "tenquanhuyen": "Phú Vang",
+      "idtp": "31"
+    },
+    {
+      "id": "479",
+      "tenquanhuyen": "Hương Thủy",
+      "idtp": "31"
+    },
+    {
+      "id": "480",
+      "tenquanhuyen": "Hương Trà",
+      "idtp": "31"
+    },
+    {
+      "id": "481",
+      "tenquanhuyen": "A Lưới",
+      "idtp": "31"
+    },
+    {
+      "id": "482",
+      "tenquanhuyen": "Phú Lộc",
+      "idtp": "31"
+    },
+    {
+      "id": "483",
+      "tenquanhuyen": "Nam Đông",
+      "idtp": "31"
+    },
+    {
+      "id": "490",
+      "tenquanhuyen": "Liên Chiểu",
+      "idtp": "32"
+    },
+    {
+      "id": "491",
+      "tenquanhuyen": "Thanh Khê",
+      "idtp": "32"
+    },
+    {
+      "id": "492",
+      "tenquanhuyen": "Hải Châu",
+      "idtp": "32"
+    },
+    {
+      "id": "493",
+      "tenquanhuyen": "Sơn Trà",
+      "idtp": "32"
+    },
+    {
+      "id": "494",
+      "tenquanhuyen": "Ngũ Hành Sơn",
+      "idtp": "32"
+    },
+    {
+      "id": "495",
+      "tenquanhuyen": "Cẩm Lệ",
+      "idtp": "32"
+    },
+    {
+      "id": "497",
+      "tenquanhuyen": "Hoà Vang",
+      "idtp": "32"
+    },
+    {
+      "id": "498",
+      "tenquanhuyen": "Hoàng Sa",
+      "idtp": "32"
+    },
+    {
+      "id": "502",
+      "tenquanhuyen": "Tp.Tam Kỳ",
+      "idtp": "33"
+    },
+    {
+      "id": "503",
+      "tenquanhuyen": "Tp.Hội An",
+      "idtp": "33"
+    },
+    {
+      "id": "504",
+      "tenquanhuyen": "Tây Giang",
+      "idtp": "33"
+    },
+    {
+      "id": "505",
+      "tenquanhuyen": "Đông Giang",
+      "idtp": "33"
+    },
+    {
+      "id": "506",
+      "tenquanhuyen": "Đại Lộc",
+      "idtp": "33"
+    },
+    {
+      "id": "507",
+      "tenquanhuyen": "Điện Bàn",
+      "idtp": "33"
+    },
+    {
+      "id": "508",
+      "tenquanhuyen": "Duy Xuyên",
+      "idtp": "33"
+    },
+    {
+      "id": "509",
+      "tenquanhuyen": "Quế Sơn",
+      "idtp": "33"
+    },
+    {
+      "id": "510",
+      "tenquanhuyen": "Nam Giang",
+      "idtp": "33"
+    },
+    {
+      "id": "511",
+      "tenquanhuyen": "Phước Sơn",
+      "idtp": "33"
+    },
+    {
+      "id": "512",
+      "tenquanhuyen": "Hiệp Đức",
+      "idtp": "33"
+    },
+    {
+      "id": "513",
+      "tenquanhuyen": "Thăng Bình",
+      "idtp": "33"
+    },
+    {
+      "id": "514",
+      "tenquanhuyen": "Tiên Phước",
+      "idtp": "33"
+    },
+    {
+      "id": "515",
+      "tenquanhuyen": "Bắc Trà My",
+      "idtp": "33"
+    },
+    {
+      "id": "516",
+      "tenquanhuyen": "Nam Trà My",
+      "idtp": "33"
+    },
+    {
+      "id": "517",
+      "tenquanhuyen": "Núi Thành",
+      "idtp": "33"
+    },
+    {
+      "id": "518",
+      "tenquanhuyen": "Phú Ninh",
+      "idtp": "33"
+    },
+    {
+      "id": "519",
+      "tenquanhuyen": "Nông Sơn",
+      "idtp": "34"
+    },
+    {
+      "id": "522",
+      "tenquanhuyen": "Tp.Quảng Ngãi",
+      "idtp": "34"
+    },
+    {
+      "id": "524",
+      "tenquanhuyen": "Bình Sơn",
+      "idtp": "34"
+    },
+    {
+      "id": "525",
+      "tenquanhuyen": "Trà Bồng",
+      "idtp": "34"
+    },
+    {
+      "id": "526",
+      "tenquanhuyen": "Tây Trà",
+      "idtp": "34"
+    },
+    {
+      "id": "527",
+      "tenquanhuyen": "Sơn Tịnh",
+      "idtp": "34"
+    },
+    {
+      "id": "528",
+      "tenquanhuyen": "Tư Nghĩa",
+      "idtp": "34"
+    },
+    {
+      "id": "529",
+      "tenquanhuyen": "Sơn Hà",
+      "idtp": "34"
+    },
+    {
+      "id": "530",
+      "tenquanhuyen": "Sơn Tây",
+      "idtp": "34"
+    },
+    {
+      "id": "531",
+      "tenquanhuyen": "Minh Long",
+      "idtp": "34"
+    },
+    {
+      "id": "532",
+      "tenquanhuyen": "Nghĩa Hành",
+      "idtp": "34"
+    },
+    {
+      "id": "533",
+      "tenquanhuyen": "Mộ Đức",
+      "idtp": "34"
+    },
+    {
+      "id": "534",
+      "tenquanhuyen": "Đức Phổ",
+      "idtp": "34"
+    },
+    {
+      "id": "535",
+      "tenquanhuyen": "Ba Tơ",
+      "idtp": "34"
+    },
+    {
+      "id": "536",
+      "tenquanhuyen": "Lý Sơn",
+      "idtp": "34"
+    },
+    {
+      "id": "540",
+      "tenquanhuyen": "Tp.Qui Nhơn",
+      "idtp": "35"
+    },
+    {
+      "id": "542",
+      "tenquanhuyen": "An Lão",
+      "idtp": "35"
+    },
+    {
+      "id": "543",
+      "tenquanhuyen": "Hoài Nhơn",
+      "idtp": "35"
+    },
+    {
+      "id": "544",
+      "tenquanhuyen": "Hoài Ân",
+      "idtp": "35"
+    },
+    {
+      "id": "545",
+      "tenquanhuyen": "Phù Mỹ",
+      "idtp": "35"
+    },
+    {
+      "id": "546",
+      "tenquanhuyen": "Vĩnh Thạnh",
+      "idtp": "35"
+    },
+    {
+      "id": "547",
+      "tenquanhuyen": "Tây Sơn",
+      "idtp": "35"
+    },
+    {
+      "id": "548",
+      "tenquanhuyen": "Phù Cát",
+      "idtp": "35"
+    },
+    {
+      "id": "549",
+      "tenquanhuyen": "An Nhơn",
+      "idtp": "35"
+    },
+    {
+      "id": "550",
+      "tenquanhuyen": "Tuy Phước",
+      "idtp": "35"
+    },
+    {
+      "id": "551",
+      "tenquanhuyen": "Vân Canh",
+      "idtp": "35"
+    },
+    {
+      "id": "555",
+      "tenquanhuyen": "Tp.Tuy Hòa",
+      "idtp": "36"
+    },
+    {
+      "id": "557",
+      "tenquanhuyen": "Tx.Sông Cầu",
+      "idtp": "36"
+    },
+    {
+      "id": "558",
+      "tenquanhuyen": "Đồng Xuân",
+      "idtp": "36"
+    },
+    {
+      "id": "559",
+      "tenquanhuyen": "Tuy An",
+      "idtp": "36"
+    },
+    {
+      "id": "560",
+      "tenquanhuyen": "Sơn Hòa",
+      "idtp": "36"
+    },
+    {
+      "id": "561",
+      "tenquanhuyen": "Sông Hinh",
+      "idtp": "36"
+    },
+    {
+      "id": "562",
+      "tenquanhuyen": "Tây Hoà",
+      "idtp": "36"
+    },
+    {
+      "id": "563",
+      "tenquanhuyen": "Phú Hoà",
+      "idtp": "36"
+    },
+    {
+      "id": "564",
+      "tenquanhuyen": "Đông Hoà",
+      "idtp": "36"
+    },
+    {
+      "id": "568",
+      "tenquanhuyen": "Tp.Nha Trang",
+      "idtp": "37"
+    },
+    {
+      "id": "569",
+      "tenquanhuyen": "Tx.Cam Ranh",
+      "idtp": "37"
+    },
+    {
+      "id": "570",
+      "tenquanhuyen": "Cam Lâm",
+      "idtp": "37"
+    },
+    {
+      "id": "571",
+      "tenquanhuyen": "Vạn Ninh",
+      "idtp": "37"
+    },
+    {
+      "id": "572",
+      "tenquanhuyen": "Ninh Hòa",
+      "idtp": "37"
+    },
+    {
+      "id": "573",
+      "tenquanhuyen": "Khánh Vĩnh",
+      "idtp": "37"
+    },
+    {
+      "id": "574",
+      "tenquanhuyen": "Diên Khánh",
+      "idtp": "37"
+    },
+    {
+      "id": "575",
+      "tenquanhuyen": "Khánh Sơn",
+      "idtp": "37"
+    },
+    {
+      "id": "576",
+      "tenquanhuyen": "Trường Sa",
+      "idtp": "37"
+    },
+    {
+      "id": "582",
+      "tenquanhuyen": "Tp.Phan Rang-Tháp Chàm",
+      "idtp": "38"
+    },
+    {
+      "id": "584",
+      "tenquanhuyen": "Bác Ái",
+      "idtp": "38"
+    },
+    {
+      "id": "585",
+      "tenquanhuyen": "Ninh Sơn",
+      "idtp": "38"
+    },
+    {
+      "id": "586",
+      "tenquanhuyen": "Ninh Hải",
+      "idtp": "38"
+    },
+    {
+      "id": "587",
+      "tenquanhuyen": "Ninh Phước",
+      "idtp": "38"
+    },
+    {
+      "id": "588",
+      "tenquanhuyen": "Thuận Bắc",
+      "idtp": "38"
+    },
+    {
+      "id": "589",
+      "tenquanhuyen": "Thuận Nam",
+      "idtp": "38"
+    },
+    {
+      "id": "593",
+      "tenquanhuyen": "Tp.Phan Thiết",
+      "idtp": "39"
+    },
+    {
+      "id": "594",
+      "tenquanhuyen": "Tx.La Gi",
+      "idtp": "39"
+    },
+    {
+      "id": "595",
+      "tenquanhuyen": "Tuy Phong",
+      "idtp": "39"
+    },
+    {
+      "id": "596",
+      "tenquanhuyen": "Bắc Bình",
+      "idtp": "39"
+    },
+    {
+      "id": "597",
+      "tenquanhuyen": "Hàm Thuận Bắc",
+      "idtp": "39"
+    },
+    {
+      "id": "598",
+      "tenquanhuyen": "Hàm Thuận Nam",
+      "idtp": "39"
+    },
+    {
+      "id": "599",
+      "tenquanhuyen": "Tánh Linh",
+      "idtp": "39"
+    },
+    {
+      "id": "600",
+      "tenquanhuyen": "Đức Linh",
+      "idtp": "39"
+    },
+    {
+      "id": "601",
+      "tenquanhuyen": "Hàm Tân",
+      "idtp": "39"
+    },
+    {
+      "id": "602",
+      "tenquanhuyen": "Phú Quí",
+      "idtp": "39"
+    },
+    {
+      "id": "608",
+      "tenquanhuyen": "Tp.Kon Tum",
+      "idtp": "40"
+    },
+    {
+      "id": "610",
+      "tenquanhuyen": "Đắk Glei",
+      "idtp": "40"
+    },
+    {
+      "id": "611",
+      "tenquanhuyen": "Ngọc Hồi",
+      "idtp": "40"
+    },
+    {
+      "id": "612",
+      "tenquanhuyen": "Đắk Tô",
+      "idtp": "40"
+    },
+    {
+      "id": "613",
+      "tenquanhuyen": "Kon Plông",
+      "idtp": "40"
+    },
+    {
+      "id": "614",
+      "tenquanhuyen": "Kon Rẫy",
+      "idtp": "40"
+    },
+    {
+      "id": "615",
+      "tenquanhuyen": "Đắk Hà",
+      "idtp": "40"
+    },
+    {
+      "id": "616",
+      "tenquanhuyen": "Sa Thầy",
+      "idtp": "40"
+    },
+    {
+      "id": "617",
+      "tenquanhuyen": "Tu Mơ Rông",
+      "idtp": "40"
+    },
+    {
+      "id": "622",
+      "tenquanhuyen": "Tp.Pleiku",
+      "idtp": "41"
+    },
+    {
+      "id": "623",
+      "tenquanhuyen": "Tx.An Khê",
+      "idtp": "41"
+    },
+    {
+      "id": "624",
+      "tenquanhuyen": "Tx.Ayun Pa",
+      "idtp": "41"
+    },
+    {
+      "id": "625",
+      "tenquanhuyen": "Kbang",
+      "idtp": "41"
+    },
+    {
+      "id": "626",
+      "tenquanhuyen": "Đăk Đoa",
+      "idtp": "41"
+    },
+    {
+      "id": "627",
+      "tenquanhuyen": "Chư Păh",
+      "idtp": "41"
+    },
+    {
+      "id": "628",
+      "tenquanhuyen": "Ia Grai",
+      "idtp": "41"
+    },
+    {
+      "id": "629",
+      "tenquanhuyen": "Mang Yang",
+      "idtp": "41"
+    },
+    {
+      "id": "630",
+      "tenquanhuyen": "Kông Chro",
+      "idtp": "41"
+    },
+    {
+      "id": "631",
+      "tenquanhuyen": "Đức Cơ",
+      "idtp": "41"
+    },
+    {
+      "id": "632",
+      "tenquanhuyen": "Chư Prông",
+      "idtp": "41"
+    },
+    {
+      "id": "633",
+      "tenquanhuyen": "Chư Sê",
+      "idtp": "41"
+    },
+    {
+      "id": "634",
+      "tenquanhuyen": "Đăk Pơ",
+      "idtp": "41"
+    },
+    {
+      "id": "635",
+      "tenquanhuyen": "Ia Pa",
+      "idtp": "41"
+    },
+    {
+      "id": "637",
+      "tenquanhuyen": "Krông Pa",
+      "idtp": "41"
+    },
+    {
+      "id": "638",
+      "tenquanhuyen": "Phú Thiện",
+      "idtp": "41"
+    },
+    {
+      "id": "639",
+      "tenquanhuyen": "Chư Pưh",
+      "idtp": "41"
+    },
+    {
+      "id": "643",
+      "tenquanhuyen": "Tp.Buôn Ma Thuột",
+      "idtp": "42"
+    },
+    {
+      "id": "644",
+      "tenquanhuyen": "Tx.Buôn Hồ",
+      "idtp": "42"
+    },
+    {
+      "id": "645",
+      "tenquanhuyen": "Ea H\\'leo",
+      "idtp": "42"
+    },
+    {
+      "id": "646",
+      "tenquanhuyen": "Ea Súp",
+      "idtp": "42"
+    },
+    {
+      "id": "647",
+      "tenquanhuyen": "Buôn Đôn",
+      "idtp": "42"
+    },
+    {
+      "id": "648",
+      "tenquanhuyen": "Cư M\\'gar",
+      "idtp": "42"
+    },
+    {
+      "id": "649",
+      "tenquanhuyen": "Krông Búk",
+      "idtp": "42"
+    },
+    {
+      "id": "650",
+      "tenquanhuyen": "Krông Năng",
+      "idtp": "42"
+    },
+    {
+      "id": "651",
+      "tenquanhuyen": "Ea Kar",
+      "idtp": "42"
+    },
+    {
+      "id": "652",
+      "tenquanhuyen": "M\\'đrắk",
+      "idtp": "42"
+    },
+    {
+      "id": "653",
+      "tenquanhuyen": "Krông Bông",
+      "idtp": "42"
+    },
+    {
+      "id": "654",
+      "tenquanhuyen": "Krông Pắc",
+      "idtp": "42"
+    },
+    {
+      "id": "655",
+      "tenquanhuyen": "Krông A Na",
+      "idtp": "42"
+    },
+    {
+      "id": "656",
+      "tenquanhuyen": "Lắk",
+      "idtp": "42"
+    },
+    {
+      "id": "657",
+      "tenquanhuyen": "Cư Kuin",
+      "idtp": "42"
+    },
+    {
+      "id": "660",
+      "tenquanhuyen": "Tx.Gia Nghĩa",
+      "idtp": "43"
+    },
+    {
+      "id": "661",
+      "tenquanhuyen": "Đắk Glong",
+      "idtp": "43"
+    },
+    {
+      "id": "662",
+      "tenquanhuyen": "Cư Jút",
+      "idtp": "43"
+    },
+    {
+      "id": "663",
+      "tenquanhuyen": "Đắk Mil",
+      "idtp": "43"
+    },
+    {
+      "id": "664",
+      "tenquanhuyen": "Krông Nô",
+      "idtp": "43"
+    },
+    {
+      "id": "665",
+      "tenquanhuyen": "Đắk Song",
+      "idtp": "43"
+    },
+    {
+      "id": "666",
+      "tenquanhuyen": "Đắk R\\'lấp",
+      "idtp": "43"
+    },
+    {
+      "id": "667",
+      "tenquanhuyen": "Tuy Đức",
+      "idtp": "43"
+    },
+    {
+      "id": "672",
+      "tenquanhuyen": "Tp.Đà Lạt",
+      "idtp": "44"
+    },
+    {
+      "id": "673",
+      "tenquanhuyen": "Tp.Bảo Lộc",
+      "idtp": "44"
+    },
+    {
+      "id": "674",
+      "tenquanhuyen": "Đam Rông",
+      "idtp": "44"
+    },
+    {
+      "id": "675",
+      "tenquanhuyen": "Lạc Dương",
+      "idtp": "44"
+    },
+    {
+      "id": "676",
+      "tenquanhuyen": "Lâm Hà",
+      "idtp": "44"
+    },
+    {
+      "id": "677",
+      "tenquanhuyen": "Đơn Dương",
+      "idtp": "44"
+    },
+    {
+      "id": "678",
+      "tenquanhuyen": "Đức Trọng",
+      "idtp": "44"
+    },
+    {
+      "id": "679",
+      "tenquanhuyen": "Di Linh",
+      "idtp": "44"
+    },
+    {
+      "id": "680",
+      "tenquanhuyen": "Bảo Lâm",
+      "idtp": "44"
+    },
+    {
+      "id": "681",
+      "tenquanhuyen": "Đạ Huoai",
+      "idtp": "44"
+    },
+    {
+      "id": "682",
+      "tenquanhuyen": "Đạ Tẻh",
+      "idtp": "44"
+    },
+    {
+      "id": "683",
+      "tenquanhuyen": "Cát Tiên",
+      "idtp": "44"
+    },
+    {
+      "id": "688",
+      "tenquanhuyen": "Tx.Phước Long",
+      "idtp": "45"
+    },
+    {
+      "id": "689",
+      "tenquanhuyen": "Tx.Đồng Xoài",
+      "idtp": "45"
+    },
+    {
+      "id": "690",
+      "tenquanhuyen": "Tx.Bình Long",
+      "idtp": "45"
+    },
+    {
+      "id": "691",
+      "tenquanhuyen": "Bù Gia Mập",
+      "idtp": "45"
+    },
+    {
+      "id": "692",
+      "tenquanhuyen": "Lộc Ninh",
+      "idtp": "45"
+    },
+    {
+      "id": "693",
+      "tenquanhuyen": "Bù Đốp",
+      "idtp": "45"
+    },
+    {
+      "id": "694",
+      "tenquanhuyen": "Hớn Quản",
+      "idtp": "45"
+    },
+    {
+      "id": "695",
+      "tenquanhuyen": "Đồng Phù",
+      "idtp": "45"
+    },
+    {
+      "id": "696",
+      "tenquanhuyen": "Bù Đăng",
+      "idtp": "45"
+    },
+    {
+      "id": "697",
+      "tenquanhuyen": "Chơn Thành",
+      "idtp": "45"
+    },
+    {
+      "id": "703",
+      "tenquanhuyen": "Tx.Tây Ninh",
+      "idtp": "46"
+    },
+    {
+      "id": "705",
+      "tenquanhuyen": "Tân Biên",
+      "idtp": "46"
+    },
+    {
+      "id": "706",
+      "tenquanhuyen": "Tân Châu",
+      "idtp": "46"
+    },
+    {
+      "id": "707",
+      "tenquanhuyen": "Dương Minh Châu",
+      "idtp": "46"
+    },
+    {
+      "id": "708",
+      "tenquanhuyen": "Châu Thành",
+      "idtp": "46"
+    },
+    {
+      "id": "709",
+      "tenquanhuyen": "Hòa Thành",
+      "idtp": "46"
+    },
+    {
+      "id": "710",
+      "tenquanhuyen": "Gò Dầu",
+      "idtp": "46"
+    },
+    {
+      "id": "711",
+      "tenquanhuyen": "Bến Cầu",
+      "idtp": "46"
+    },
+    {
+      "id": "712",
+      "tenquanhuyen": "Trảng Bàng",
+      "idtp": "46"
+    },
+    {
+      "id": "718",
+      "tenquanhuyen": "Thủ Dầu Một",
+      "idtp": "47"
+    },
+    {
+      "id": "720",
+      "tenquanhuyen": "Dầu Tiếng",
+      "idtp": "47"
+    },
+    {
+      "id": "721",
+      "tenquanhuyen": "Bến Cát",
+      "idtp": "47"
+    },
+    {
+      "id": "722",
+      "tenquanhuyen": "Phú Giáo",
+      "idtp": "47"
+    },
+    {
+      "id": "723",
+      "tenquanhuyen": "Tân Uyên",
+      "idtp": "47"
+    },
+    {
+      "id": "724",
+      "tenquanhuyen": "Dĩ An",
+      "idtp": "47"
+    },
+    {
+      "id": "725",
+      "tenquanhuyen": "Thuận An",
+      "idtp": "47"
+    },
+    {
+      "id": "731",
+      "tenquanhuyen": "Tp.Biên Hòa",
+      "idtp": "48"
+    },
+    {
+      "id": "732",
+      "tenquanhuyen": "Long Khánh",
+      "idtp": "48"
+    },
+    {
+      "id": "734",
+      "tenquanhuyen": "Tân Phú",
+      "idtp": "48"
+    },
+    {
+      "id": "735",
+      "tenquanhuyen": "Vĩnh Cửu",
+      "idtp": "48"
+    },
+    {
+      "id": "736",
+      "tenquanhuyen": "Định Quán",
+      "idtp": "48"
+    },
+    {
+      "id": "737",
+      "tenquanhuyen": "Trảng Bom",
+      "idtp": "48"
+    },
+    {
+      "id": "738",
+      "tenquanhuyen": "Thống Nhất",
+      "idtp": "48"
+    },
+    {
+      "id": "739",
+      "tenquanhuyen": "Cẩm Mỹ",
+      "idtp": "48"
+    },
+    {
+      "id": "740",
+      "tenquanhuyen": "Long Thành",
+      "idtp": "48"
+    },
+    {
+      "id": "741",
+      "tenquanhuyen": "Xuân Lộc",
+      "idtp": "48"
+    },
+    {
+      "id": "742",
+      "tenquanhuyen": "Nhơn Trạch",
+      "idtp": "48"
+    },
+    {
+      "id": "747",
+      "tenquanhuyen": "Tp.Vũng Tầu",
+      "idtp": "49"
+    },
+    {
+      "id": "748",
+      "tenquanhuyen": "Tp.Bà Rịa",
+      "idtp": "49"
+    },
+    {
+      "id": "750",
+      "tenquanhuyen": "Châu Đức",
+      "idtp": "49"
+    },
+    {
+      "id": "751",
+      "tenquanhuyen": "Xuyên Mộc",
+      "idtp": "49"
+    },
+    {
+      "id": "752",
+      "tenquanhuyen": "Long Điền",
+      "idtp": "49"
+    },
+    {
+      "id": "753",
+      "tenquanhuyen": "Đất Đỏ",
+      "idtp": "49"
+    },
+    {
+      "id": "754",
+      "tenquanhuyen": "Tân Thành",
+      "idtp": "49"
+    },
+    {
+      "id": "755",
+      "tenquanhuyen": "Côn Đảo",
+      "idtp": "49"
+    },
+    {
+      "id": "760",
+      "tenquanhuyen": "Quận 1",
+      "idtp": "50"
+    },
+    {
+      "id": "761",
+      "tenquanhuyen": "Quận 12",
+      "idtp": "50"
+    },
+    {
+      "id": "762",
+      "tenquanhuyen": "Quận Thủ Đức",
+      "idtp": "50"
+    },
+    {
+      "id": "763",
+      "tenquanhuyen": "Quận 9",
+      "idtp": "50"
+    },
+    {
+      "id": "764",
+      "tenquanhuyen": "Quận Gò Vấp",
+      "idtp": "50"
+    },
+    {
+      "id": "765",
+      "tenquanhuyen": "Quận Bình Thạnh",
+      "idtp": "50"
+    },
+    {
+      "id": "766",
+      "tenquanhuyen": "Quận Tân Bình",
+      "idtp": "50"
+    },
+    {
+      "id": "767",
+      "tenquanhuyen": "Quận Tân Phú",
+      "idtp": "50"
+    },
+    {
+      "id": "768",
+      "tenquanhuyen": "Quận Phú Nhuận",
+      "idtp": "50"
+    },
+    {
+      "id": "769",
+      "tenquanhuyen": "Quận 2",
+      "idtp": "50"
+    },
+    {
+      "id": "770",
+      "tenquanhuyen": "Quận 3",
+      "idtp": "50"
+    },
+    {
+      "id": "771",
+      "tenquanhuyen": "Quận 10",
+      "idtp": "50"
+    },
+    {
+      "id": "772",
+      "tenquanhuyen": "Quận 11",
+      "idtp": "50"
+    },
+    {
+      "id": "773",
+      "tenquanhuyen": "Quận 4",
+      "idtp": "50"
+    },
+    {
+      "id": "774",
+      "tenquanhuyen": "Quận 5",
+      "idtp": "50"
+    },
+    {
+      "id": "775",
+      "tenquanhuyen": "Quận 6",
+      "idtp": "50"
+    },
+    {
+      "id": "776",
+      "tenquanhuyen": "Quận 8",
+      "idtp": "50"
+    },
+    {
+      "id": "777",
+      "tenquanhuyen": "Quận Bình Tân",
+      "idtp": "50"
+    },
+    {
+      "id": "778",
+      "tenquanhuyen": "Quận 7",
+      "idtp": "50"
+    },
+    {
+      "id": "783",
+      "tenquanhuyen": "Củ Chi",
+      "idtp": "50"
+    },
+    {
+      "id": "784",
+      "tenquanhuyen": "Hóc Môn",
+      "idtp": "50"
+    },
+    {
+      "id": "785",
+      "tenquanhuyen": "Quận Bình Chánh",
+      "idtp": "50"
+    },
+    {
+      "id": "786",
+      "tenquanhuyen": "Nhà Bè",
+      "idtp": "50"
+    },
+    {
+      "id": "787",
+      "tenquanhuyen": "Cần Giờ",
+      "idtp": "50"
+    },
+    {
+      "id": "794",
+      "tenquanhuyen": "Tp.Tân An",
+      "idtp": "51"
+    },
+    {
+      "id": "796",
+      "tenquanhuyen": "Tân Hưng",
+      "idtp": "51"
+    },
+    {
+      "id": "797",
+      "tenquanhuyen": "Vĩnh Hưng",
+      "idtp": "51"
+    },
+    {
+      "id": "798",
+      "tenquanhuyen": "Mộc Hóa",
+      "idtp": "51"
+    },
+    {
+      "id": "799",
+      "tenquanhuyen": "Tân Thạnh",
+      "idtp": "51"
+    },
+    {
+      "id": "800",
+      "tenquanhuyen": "Thạnh Hóa",
+      "idtp": "51"
+    },
+    {
+      "id": "801",
+      "tenquanhuyen": "Đức Huệ",
+      "idtp": "51"
+    },
+    {
+      "id": "802",
+      "tenquanhuyen": "Đức Hòa",
+      "idtp": "51"
+    },
+    {
+      "id": "803",
+      "tenquanhuyen": "Bến Lức",
+      "idtp": "51"
+    },
+    {
+      "id": "804",
+      "tenquanhuyen": "Thủ Thừa",
+      "idtp": "51"
+    },
+    {
+      "id": "805",
+      "tenquanhuyen": "Tân Trụ",
+      "idtp": "51"
+    },
+    {
+      "id": "806",
+      "tenquanhuyen": "Cần Đước",
+      "idtp": "51"
+    },
+    {
+      "id": "807",
+      "tenquanhuyen": "Cần Giuộc",
+      "idtp": "51"
+    },
+    {
+      "id": "808",
+      "tenquanhuyen": "Châu Thành",
+      "idtp": "51"
+    },
+    {
+      "id": "815",
+      "tenquanhuyen": "Tp.Mỹ Tho",
+      "idtp": "52"
+    },
+    {
+      "id": "816",
+      "tenquanhuyen": "Gò Công",
+      "idtp": "52"
+    },
+    {
+      "id": "818",
+      "tenquanhuyen": "Tân Phước",
+      "idtp": "52"
+    },
+    {
+      "id": "819",
+      "tenquanhuyen": "Cái Bè",
+      "idtp": "52"
+    },
+    {
+      "id": "820",
+      "tenquanhuyen": "Cai Lậy",
+      "idtp": "52"
+    },
+    {
+      "id": "821",
+      "tenquanhuyen": "Châu Thành",
+      "idtp": "52"
+    },
+    {
+      "id": "822",
+      "tenquanhuyen": "Chợ Gạo",
+      "idtp": "52"
+    },
+    {
+      "id": "823",
+      "tenquanhuyen": "Gò Công Tây",
+      "idtp": "52"
+    },
+    {
+      "id": "824",
+      "tenquanhuyen": "Gò Công Đông",
+      "idtp": "52"
+    },
+    {
+      "id": "825",
+      "tenquanhuyen": "Tân Phú Đông",
+      "idtp": "52"
+    },
+    {
+      "id": "829",
+      "tenquanhuyen": "Tp.Bến Tre",
+      "idtp": "53"
+    },
+    {
+      "id": "831",
+      "tenquanhuyen": "Châu Thành",
+      "idtp": "53"
+    },
+    {
+      "id": "832",
+      "tenquanhuyen": "Chợ Lách",
+      "idtp": "53"
+    },
+    {
+      "id": "833",
+      "tenquanhuyen": "Mỏ Cày Nam",
+      "idtp": "53"
+    },
+    {
+      "id": "834",
+      "tenquanhuyen": "Giồng Trôm",
+      "idtp": "53"
+    },
+    {
+      "id": "835",
+      "tenquanhuyen": "Bình Đại",
+      "idtp": "53"
+    },
+    {
+      "id": "836",
+      "tenquanhuyen": "Ba Tri",
+      "idtp": "53"
+    },
+    {
+      "id": "837",
+      "tenquanhuyen": "Thạnh Phú",
+      "idtp": "53"
+    },
+    {
+      "id": "838",
+      "tenquanhuyen": "Mỏ Cày Bắc",
+      "idtp": "53"
+    },
+    {
+      "id": "842",
+      "tenquanhuyen": "Trà Vinh",
+      "idtp": "54"
+    },
+    {
+      "id": "844",
+      "tenquanhuyen": "Càng Long",
+      "idtp": "54"
+    },
+    {
+      "id": "845",
+      "tenquanhuyen": "Cầu Kè",
+      "idtp": "54"
+    },
+    {
+      "id": "846",
+      "tenquanhuyen": "Tiểu Cần",
+      "idtp": "54"
+    },
+    {
+      "id": "847",
+      "tenquanhuyen": "Châu Thành",
+      "idtp": "54"
+    },
+    {
+      "id": "848",
+      "tenquanhuyen": "Cầu Ngang",
+      "idtp": "54"
+    },
+    {
+      "id": "849",
+      "tenquanhuyen": "Trà Cú",
+      "idtp": "54"
+    },
+    {
+      "id": "850",
+      "tenquanhuyen": "Duyên Hải",
+      "idtp": "54"
+    },
+    {
+      "id": "855",
+      "tenquanhuyen": "Tp.Vĩnh Long",
+      "idtp": "55"
+    },
+    {
+      "id": "857",
+      "tenquanhuyen": "Long Hồ",
+      "idtp": "55"
+    },
+    {
+      "id": "858",
+      "tenquanhuyen": "Mang Thít",
+      "idtp": "55"
+    },
+    {
+      "id": "859",
+      "tenquanhuyen": "Vũng Liêm",
+      "idtp": "55"
+    },
+    {
+      "id": "860",
+      "tenquanhuyen": "Tam Bình",
+      "idtp": "55"
+    },
+    {
+      "id": "861",
+      "tenquanhuyen": "Bình Minh",
+      "idtp": "55"
+    },
+    {
+      "id": "862",
+      "tenquanhuyen": "Trà Ôn",
+      "idtp": "55"
+    },
+    {
+      "id": "863",
+      "tenquanhuyen": "Bình Tân",
+      "idtp": "55"
+    },
+    {
+      "id": "866",
+      "tenquanhuyen": "Tp.Cao Lãnh",
+      "idtp": "56"
+    },
+    {
+      "id": "867",
+      "tenquanhuyen": "Sa Đéc",
+      "idtp": "56"
+    },
+    {
+      "id": "868",
+      "tenquanhuyen": "Hồng Ngự",
+      "idtp": "56"
+    },
+    {
+      "id": "869",
+      "tenquanhuyen": "Tân Hồng",
+      "idtp": "56"
+    },
+    {
+      "id": "870",
+      "tenquanhuyen": "Hồng Ngự",
+      "idtp": "56"
+    },
+    {
+      "id": "871",
+      "tenquanhuyen": "Tam Nông",
+      "idtp": "56"
+    },
+    {
+      "id": "872",
+      "tenquanhuyen": "Tháp Mười",
+      "idtp": "56"
+    },
+    {
+      "id": "873",
+      "tenquanhuyen": "Cao Lãnh",
+      "idtp": "56"
+    },
+    {
+      "id": "874",
+      "tenquanhuyen": "Thanh Bình",
+      "idtp": "56"
+    },
+    {
+      "id": "875",
+      "tenquanhuyen": "Lấp Vò",
+      "idtp": "56"
+    },
+    {
+      "id": "876",
+      "tenquanhuyen": "Lai Vung",
+      "idtp": "56"
+    },
+    {
+      "id": "877",
+      "tenquanhuyen": "Châu Thành",
+      "idtp": "56"
+    },
+    {
+      "id": "883",
+      "tenquanhuyen": "Tp.Long Xuyên",
+      "idtp": "57"
+    },
+    {
+      "id": "884",
+      "tenquanhuyen": "Châu Đốc",
+      "idtp": "57"
+    },
+    {
+      "id": "886",
+      "tenquanhuyen": "An Phú",
+      "idtp": "57"
+    },
+    {
+      "id": "887",
+      "tenquanhuyen": "Tân Châu",
+      "idtp": "57"
+    },
+    {
+      "id": "888",
+      "tenquanhuyen": "Phú Tân",
+      "idtp": "57"
+    },
+    {
+      "id": "889",
+      "tenquanhuyen": "Châu Phú",
+      "idtp": "57"
+    },
+    {
+      "id": "890",
+      "tenquanhuyen": "Tịnh Biên",
+      "idtp": "57"
+    },
+    {
+      "id": "891",
+      "tenquanhuyen": "Tri Tôn",
+      "idtp": "57"
+    },
+    {
+      "id": "892",
+      "tenquanhuyen": "Châu Thành",
+      "idtp": "57"
+    },
+    {
+      "id": "893",
+      "tenquanhuyen": "Chợ Mới",
+      "idtp": "57"
+    },
+    {
+      "id": "894",
+      "tenquanhuyen": "Thoại Sơn",
+      "idtp": "57"
+    },
+    {
+      "id": "899",
+      "tenquanhuyen": "Tp.Rạch Giá",
+      "idtp": "58"
+    },
+    {
+      "id": "900",
+      "tenquanhuyen": "Hà Tiên",
+      "idtp": "58"
+    },
+    {
+      "id": "902",
+      "tenquanhuyen": "Kiên Lương",
+      "idtp": "58"
+    },
+    {
+      "id": "903",
+      "tenquanhuyen": "Hòn Đất",
+      "idtp": "58"
+    },
+    {
+      "id": "904",
+      "tenquanhuyen": "Tân Hiệp",
+      "idtp": "58"
+    },
+    {
+      "id": "905",
+      "tenquanhuyen": "Châu Thành",
+      "idtp": "58"
+    },
+    {
+      "id": "906",
+      "tenquanhuyen": "Giồng Giềng",
+      "idtp": "58"
+    },
+    {
+      "id": "907",
+      "tenquanhuyen": "Gò Quao",
+      "idtp": "58"
+    },
+    {
+      "id": "908",
+      "tenquanhuyen": "An Biên",
+      "idtp": "58"
+    },
+    {
+      "id": "909",
+      "tenquanhuyen": "An Minh",
+      "idtp": "58"
+    },
+    {
+      "id": "910",
+      "tenquanhuyen": "Vĩnh Thuận",
+      "idtp": "58"
+    },
+    {
+      "id": "911",
+      "tenquanhuyen": "Phú Quốc",
+      "idtp": "58"
+    },
+    {
+      "id": "912",
+      "tenquanhuyen": "Kiên Hải",
+      "idtp": "58"
+    },
+    {
+      "id": "913",
+      "tenquanhuyen": "U Minh Thượng",
+      "idtp": "58"
+    },
+    {
+      "id": "914",
+      "tenquanhuyen": "Giang Thành",
+      "idtp": "58"
+    },
+    {
+      "id": "916",
+      "tenquanhuyen": "Quận Ninh Kiều",
+      "idtp": "59"
+    },
+    {
+      "id": "917",
+      "tenquanhuyen": "Quận Ô Môn",
+      "idtp": "59"
+    },
+    {
+      "id": "918",
+      "tenquanhuyen": "Quận Bình Thuỷ",
+      "idtp": "59"
+    },
+    {
+      "id": "919",
+      "tenquanhuyen": "Quận Cái Răng",
+      "idtp": "59"
+    },
+    {
+      "id": "923",
+      "tenquanhuyen": "Quận Thốt Nốt",
+      "idtp": "59"
+    },
+    {
+      "id": "924",
+      "tenquanhuyen": "Vĩnh Thạnh",
+      "idtp": "59"
+    },
+    {
+      "id": "925",
+      "tenquanhuyen": "Cờ Đỏ",
+      "idtp": "59"
+    },
+    {
+      "id": "926",
+      "tenquanhuyen": "Phong Điền",
+      "idtp": "59"
+    },
+    {
+      "id": "927",
+      "tenquanhuyen": "Thới Lai",
+      "idtp": "59"
+    },
+    {
+      "id": "930",
+      "tenquanhuyen": "Vị Thanh",
+      "idtp": "60"
+    },
+    {
+      "id": "931",
+      "tenquanhuyen": "Ngã Bảy",
+      "idtp": "60"
+    },
+    {
+      "id": "932",
+      "tenquanhuyen": "Châu Thành A",
+      "idtp": "60"
+    },
+    {
+      "id": "933",
+      "tenquanhuyen": "Châu Thành",
+      "idtp": "60"
+    },
+    {
+      "id": "934",
+      "tenquanhuyen": "Phụng Hiệp",
+      "idtp": "60"
+    },
+    {
+      "id": "935",
+      "tenquanhuyen": "Vị Thuỷ",
+      "idtp": "60"
+    },
+    {
+      "id": "936",
+      "tenquanhuyen": "Long Mỹ",
+      "idtp": "60"
+    },
+    {
+      "id": "941",
+      "tenquanhuyen": "Tp.Sóc Trăng",
+      "idtp": "61"
+    },
+    {
+      "id": "942",
+      "tenquanhuyen": "Châu Thành",
+      "idtp": "61"
+    },
+    {
+      "id": "943",
+      "tenquanhuyen": "Kế Sách",
+      "idtp": "61"
+    },
+    {
+      "id": "944",
+      "tenquanhuyen": "Mỹ Tú",
+      "idtp": "61"
+    },
+    {
+      "id": "945",
+      "tenquanhuyen": "Cù Lao Dung",
+      "idtp": "61"
+    },
+    {
+      "id": "946",
+      "tenquanhuyen": "Long Phú",
+      "idtp": "61"
+    },
+    {
+      "id": "947",
+      "tenquanhuyen": "Mỹ Xuyên",
+      "idtp": "61"
+    },
+    {
+      "id": "948",
+      "tenquanhuyen": "Ngã Năm",
+      "idtp": "61"
+    },
+    {
+      "id": "949",
+      "tenquanhuyen": "Thạnh Trị",
+      "idtp": "61"
+    },
+    {
+      "id": "950",
+      "tenquanhuyen": "Vĩnh Châu",
+      "idtp": "61"
+    },
+    {
+      "id": "951",
+      "tenquanhuyen": "Trần Đề",
+      "idtp": "61"
+    },
+    {
+      "id": "954",
+      "tenquanhuyen": "Bạc Liêu",
+      "idtp": "62"
+    },
+    {
+      "id": "956",
+      "tenquanhuyen": "Hồng Dân",
+      "idtp": "62"
+    },
+    {
+      "id": "957",
+      "tenquanhuyen": "Phước Long",
+      "idtp": "62"
+    },
+    {
+      "id": "958",
+      "tenquanhuyen": "Vĩnh Lợi",
+      "idtp": "62"
+    },
+    {
+      "id": "959",
+      "tenquanhuyen": "Giá Rai",
+      "idtp": "62"
+    },
+    {
+      "id": "960",
+      "tenquanhuyen": "Đông Hải",
+      "idtp": "62"
+    },
+    {
+      "id": "961",
+      "tenquanhuyen": "Hoà Bình",
+      "idtp": "62"
+    },
+    {
+      "id": "964",
+      "tenquanhuyen": "Tp.Cà Mau",
+      "idtp": "63"
+    },
+    {
+      "id": "966",
+      "tenquanhuyen": "U Minh",
+      "idtp": "63"
+    },
+    {
+      "id": "967",
+      "tenquanhuyen": "Thới Bình",
+      "idtp": "63"
+    },
+    {
+      "id": "968",
+      "tenquanhuyen": "Trần Văn Thời",
+      "idtp": "63"
+    },
+    {
+      "id": "969",
+      "tenquanhuyen": "Cái Nước",
+      "idtp": "63"
+    },
+    {
+      "id": "970",
+      "tenquanhuyen": "Đầm Dơi",
+      "idtp": "63"
+    },
+    {
+      "id": "971",
+      "tenquanhuyen": "Năm Căn",
+      "idtp": "63"
+    },
+    {
+      "id": "972",
+      "tenquanhuyen": "Phú Tân",
+      "idtp": "63"
+    },
+    {
+      "id": "973",
+      "tenquanhuyen": "Ngọc Hiển",
+      "idtp": "63"
+    }
+  ]
+}
