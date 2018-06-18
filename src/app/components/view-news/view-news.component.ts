@@ -774,10 +774,10 @@ export class ViewNewsComponent implements OnInit {
       fd.append('uploaded_file', this.listfileImg[i].file, namefile);
       this.hotelService.uploadImgNews(fd).subscribe(result => {
         if (result.text() === 'ok') {
-          this.hotelService.uploadURLImg(this.details.id, 'http://luciferwilling.ddns.net/realestate/images/' + namefile).subscribe(rs => {
+          this.hotelService.uploadURLImg(this.details.id, 'https://buonbannhadat.000webhostapp.com/images/' + namefile).subscribe(rs => {
             let tmp = {
               id: this.details.id + i,
-              link: 'http://luciferwilling.ddns.net/realestate/images/' + namefile
+              link: 'https://buonbannhadat.000webhostapp.com/images/' + namefile
             };
             this.imagesUrl.push(tmp);
           });

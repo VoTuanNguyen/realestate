@@ -347,7 +347,7 @@ export class AddnewsComponent implements OnInit {
           fd.append('uploaded_file', this.listfileImg[i].file, namefile);
           this.hotelService.uploadImgNews(fd).subscribe(result => {
             if(result.text() === 'ok'){
-              this.hotelService.uploadURLImg(id, 'http://luciferwilling.ddns.net/realestate/images/'+namefile).subscribe(rs => console.log(rs));
+              this.hotelService.uploadURLImg(id, 'https://buonbannhadat.000webhostapp.com/images/'+namefile).subscribe(rs => console.log(rs));
             }
           });
         }

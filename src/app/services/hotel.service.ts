@@ -13,8 +13,8 @@ export class HotelService {
   constructor(private http: Http, private httpClient: HttpClient) {
   }
   //lấy danh sách hotel
-  host = 'http://luciferwilling.ddns.net/realestate/';
-  //host = 'https://nhatroservice.000webhostapp.com/';
+  //host = 'http://luciferwilling.ddns.net/realestate/';
+  host = 'https://buonbannhadat.000webhostapp.com/';
   getAllNews() {
     let URL = this.host + "getAllNews.php";
     return this.httpClient.get(URL);
@@ -44,7 +44,8 @@ export class HotelService {
       headers: headers
     });
     //https://cors-anywhere.herokuapp.com/
-    let URL = "http://localhost:8080/https://maps.googleapis.com/maps/api/place/details/json?placeid=" + key + "&key=AIzaSyC9hXBNhK5zuePc2RftV09n3Ao9IPE2tRA"
+    let https = "https://cors-anywhere.herokuapp.com";
+    let URL = https + "/https://maps.googleapis.com/maps/api/place/details/json?placeid=" + key + "&key=AIzaSyC9hXBNhK5zuePc2RftV09n3Ao9IPE2tRA"
     return this.http.post(URL, options);
   }
   getAddress(key) {
@@ -53,18 +54,14 @@ export class HotelService {
     let options = new RequestOptions({
       headers: headers
     });
-    let url = "http://localhost:8080/https://maps.googleapis.com/maps/api/place/autocomplete/json?input=" + key + "&types=geocode&language=vi&key=AIzaSyC9hXBNhK5zuePc2RftV09n3Ao9IPE2tRA";
+    let https = "https://cors-anywhere.herokuapp.com";
+    let url = https + "/https://maps.googleapis.com/maps/api/place/autocomplete/json?input=" + key + "&types=geocode&language=vi&key=AIzaSyC9hXBNhK5zuePc2RftV09n3Ao9IPE2tRA";
     return this.http.post(url, options);
   }
   addNews(data) {
     let URL = this.host + "addNews.php";
-    let headers = new Headers();
-    headers.append("Content-Type", "application/json");
-    let options = new RequestOptions({
-      headers: headers
-    });
     console.log(JSON.stringify({ data: data }));
-    return this.http.post(URL, JSON.stringify({ data: data }), options);
+    return this.http.post(URL, JSON.stringify({ data: data }));
   }
   uploadImgNews(fd) {
     let URL = this.host + "upload_image.php";
@@ -76,37 +73,21 @@ export class HotelService {
   }
   getNewsID(id) {
     let URL = this.host + "get_news_id.php?id=" + id;
-    return this.http.get(URL);
+    return this.httpClient.get(URL);
   }
   updateInfoDetailNews(data) {
     let URL = this.host + "update_info_detail.php";
-    let headers = new Headers();
-    headers.append("Content-Type", "application/json");
-    let options = new RequestOptions({
-      headers: headers
-    });
-    console.log(JSON.stringify({ data: data }));
-    return this.http.post(URL, JSON.stringify({ data: data }), options);
+    return this.http.post(URL, JSON.stringify({ data: data }));
   }
   updateDecribeNews(data) {
     let URL = this.host + "update_motathem.php";
-    let headers = new Headers();
-    headers.append("Content-Type", "application/json");
-    let options = new RequestOptions({
-      headers: headers
-    });
     console.log(JSON.stringify({ data: data }));
-    return this.http.post(URL, JSON.stringify({ data: data }), options);
+    return this.http.post(URL, JSON.stringify({ data: data }));
   }
   updateInfoContactNews(data) {
     let URL = this.host + "update_info_contact.php";
-    let headers = new Headers();
-    headers.append("Content-Type", "application/json");
-    let options = new RequestOptions({
-      headers: headers
-    });
     console.log(JSON.stringify({ data: data }));
-    return this.http.post(URL, JSON.stringify({ data: data }), options);
+    return this.http.post(URL, JSON.stringify({ data: data }));
   }
   deleteImgID(id) {
     let URL = this.host + "delete_img_url.php?id=" + id;

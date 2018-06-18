@@ -2,6 +2,7 @@ import { Component, OnInit, AfterContentChecked, ViewChild } from '@angular/core
 import { ActivatedRoute, Router } from '@angular/router';
 import { HotelService } from '../../services/hotel.service';
 import { Observable } from 'rxjs/Observable';
+import {Location, LocationStrategy, PathLocationStrategy} from '@angular/common';
 
 @Component({
   selector: 'app-view-detail',
@@ -17,9 +18,21 @@ export class ViewDetailComponent implements OnInit, AfterContentChecked {
   map: google.maps.Map;
   marker: google.maps.Marker;
 
-  constructor(private route: ActivatedRoute, private hotelService: HotelService) { }
-
+  constructor(private route: ActivatedRoute, private hotelService: HotelService, private location: Location) { }
+  
   ngOnInit() {
+    let t: any;
+    t = this.location;
+    let id = t._platformStrategy._platformLocation.location.href.split('?id=')[1];
+    this.hotelService.getNewsID(id).subscribe(news => {// lấy dữ liệu sách từ csdl
+      this.details = news;
+      this.isLoad = true;
+      this.showPosition(Number(this.details.lat),Number(this.details.lng));
+    });
+    //get list img
+    this.hotelService.getImgID(id).subscribe(lstimg => {
+      this.imagesUrl = lstimg;
+    });
     //khởi tạo map
     const myLatlng = new google.maps.LatLng(10.8454899, 106.7945204)
     var mapOptions = {
@@ -28,19 +41,19 @@ export class ViewDetailComponent implements OnInit, AfterContentChecked {
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     this.map = new google.maps.Map(this.gmapElement.nativeElement, mapOptions);
-    this.route.params.subscribe(params => {
-      this.newsid = params["id"];// getid
-      //get info news
-      this.hotelService.getNewsID(this.newsid).subscribe(news => {// lấy dữ liệu sách từ csdl
-        this.details = news;
-        this.isLoad = true;
-        this.showPosition(Number(news.json().lat),Number(news.json().lng));
-      });
-      //get list img
-      this.hotelService.getImgID(this.newsid).subscribe(lstimg => {
-        this.imagesUrl = lstimg;
-      });
-		});
+    // this.route.params.subscribe(params => {
+    //   this.newsid = params["id"];// getid
+    //   //get info news
+    //   this.hotelService.getNewsID(this.newsid).subscribe(news => {// lấy dữ liệu sách từ csdl
+    //     this.details = news;
+    //     this.isLoad = true;
+    //     this.showPosition(Number(this.details.lat),Number(this.details.lng));
+    //   });
+    //   //get list img
+    //   this.hotelService.getImgID(this.newsid).subscribe(lstimg => {
+    //     this.imagesUrl = lstimg;
+    //   });
+		// });
   }
   ngAfterContentChecked(){
     let elementMota : HTMLElement = document.getElementById('motathem') as HTMLElement;

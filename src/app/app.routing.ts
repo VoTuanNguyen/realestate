@@ -41,7 +41,7 @@ const routes: Routes = [
 				component: HotelsComponent
 			},
 			{
-				path: 'view-detail/:id',
+				path: 'view-detail',
 				component: ViewDetailComponent
 			}
 		]
