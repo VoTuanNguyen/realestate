@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { routing } from './app.routing';
 import 'rxjs/add/operator/map';
@@ -29,6 +29,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { EditComponent } from './components/edit/edit.component';
 import { ViewDetailComponent } from './components/view-detail/view-detail.component';
 
+import { Ng4GeoautocompleteModule } from 'ng4-geoautocomplete';
+
 
 @NgModule({
   declarations: [
@@ -55,7 +57,8 @@ import { ViewDetailComponent } from './components/view-detail/view-detail.compon
     OwlModule,
     NgbModule.forRoot(),
     NgxPaginationModule,
-    CKEditorModule
+    CKEditorModule,
+    Ng4GeoautocompleteModule.forRoot()   
   ],
   providers: [HotelService],
   bootstrap: [AppComponent]

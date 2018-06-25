@@ -37,27 +37,6 @@ export class HotelService {
     let URL = this.host + "getDescNews.php";
     return this.httpClient.get(URL);
   }
-  getLocation(key) {
-    let headers = new Headers();
-    headers.append("Content-Type", "application/x-www-form-urlencoded");
-    let options = new RequestOptions({
-      headers: headers
-    });
-    //https://cors-anywhere.herokuapp.com/
-    let https = "https://cors-anywhere.herokuapp.com";
-    let URL = https + "/https://maps.googleapis.com/maps/api/place/details/json?placeid=" + key + "&key=AIzaSyC9hXBNhK5zuePc2RftV09n3Ao9IPE2tRA"
-    return this.http.post(URL, options);
-  }
-  getAddress(key) {
-    let headers = new Headers();
-    headers.append("Content-Type", "application/x-www-form-urlencoded");
-    let options = new RequestOptions({
-      headers: headers
-    });
-    let https = "https://cors-anywhere.herokuapp.com";
-    let url = https + "/https://maps.googleapis.com/maps/api/place/autocomplete/json?input=" + key + "&types=geocode&language=vi&key=AIzaSyC9hXBNhK5zuePc2RftV09n3Ao9IPE2tRA";
-    return this.http.post(url, options);
-  }
   addNews(data) {
     let URL = this.host + "addNews.php";
     console.log(JSON.stringify({ data: data }));

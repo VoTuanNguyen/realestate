@@ -42,7 +42,7 @@
       </select>
     </div>
     <div class="col-sm-2">
-      <button routerLink="/manage/addnews" class="btn btn-primary btn-block">Thêm tin mới</button>
+      <button routerLink="real-estate/manage/addnews" class="btn btn-primary btn-block">Thêm tin mới</button>
     </div>
   </div>
   <div class="row" *ngIf="!isLoading" style="margin-top:20px;">
@@ -408,12 +408,8 @@
               <tbody>
                 <tr>
                   <td>
-                    <input *ngIf="isEditMap" [(ngModel)]="keysearch" name="keysearch" type="text" (input)="onSearchChange($event.target.value)"
-                      class="form-control" placeholder="Nhập vị trí">
+                    <ng4geo-autocomplete *ngIf="isEditMap" (componentCallback)="autoCompleteCallback1($event)"></ng4geo-autocomplete>
                     <div id="myInputautocomplete-list" class="autocomplete-items">
-                      <div *ngFor="let rs of address" id="{{rs.placeid}}&text={{rs.text}}" (click)="clickSearch($event)">
-                        {{rs.text}}
-                      </div>
                       <div #gmap (click)="clickMap()" style="width:100%; height:400px; margin-top: 10px;"></div>
                     </div>
                   </td>

@@ -127,34 +127,8 @@ export class ViewNewsComponent implements OnInit {
       setTimeout(this.showPosition(localStorage.getItem('lat'), localStorage.getItem('lng')), 500);
     }
   }
-  keysearch;
-  clickSearch(event) {
-    let key = event.target.getAttribute('id');
-    this.keysearch = key.split('&text=')[1];
-    this.address = [];
-    let id = key.split('&text=')[0];
-    this.hotelService.getLocation(id).subscribe(data => {
-      this.showPosition(data.json().result.geometry.location.lat, data.json().result.geometry.location.lng);
-    });
-  }
-  address = [];
-  onSearchChange(value) {
-    this.address = [];
-    let temp = [];
-    let arr = {
-      text: '',
-      placeid: ''
-    }
-    if (value.length !== 0) {
-      this.hotelService.getAddress(value).subscribe(data => {
-        temp = data.json().predictions;
-        for (var i = 0; i < temp.length; i++) {
-          arr.text = temp[i].description;
-          arr.placeid = temp[i].place_id;
-          this.address.push(arr);
-        }
-      });
-    }
+  autoCompleteCallback1(selectedData:any) {
+    this.showPosition(selectedData.data.geometry.location.lat, selectedData.data.geometry.location.lng);
   }
   onChange(value) {
     switch (value) {
@@ -680,7 +654,6 @@ export class ViewNewsComponent implements OnInit {
   //
   canleUpdate() {
     this.showPosition(this.details.lat, this.details.lng);
-    this.address = [];
   }
 
   //Đổ mảng update qua mảng details
@@ -728,6 +701,9 @@ export class ViewNewsComponent implements OnInit {
       }
       if (this.imagesUrl[i].id === id) {
         this.imagesUrl.splice(i, 1);
+      }
+      if(this.listfileImg.length > 0 && this.listfileImg[i].id === id){
+        this.listfileImg.splice(i, 1);
       }
     }
   }

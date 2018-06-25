@@ -129,24 +129,8 @@ export class AddnewsComponent implements OnInit {
   onChangeDistrict(value) {
     this.idquanhuyen = value;
   }
-  address = [];
-  onSearchChange(value) {
-    this.address = [];
-    let temp = [];
-    let arr = {
-      text: '',
-      placeid: ''
-    }
-    if (value.length !== 0) {
-      this.hotelService.getAddress(value).subscribe(data => {
-        temp = data.json().predictions;
-        for (var i = 0; i < temp.length; i++) {
-          arr.text = temp[i].description;
-          arr.placeid = temp[i].place_id;
-          this.address.push(arr);
-        }
-      });
-    }
+  autoCompleteCallback1(selectedData:any) {
+    this.makeMarker(selectedData.data.geometry.location.lat, selectedData.data.geometry.location.lng);
   }
   makeMarker(lat, lng) {
     this.hotellat = lat;
@@ -164,16 +148,6 @@ export class AddnewsComponent implements OnInit {
       this.marker.setPosition(location);
     }
   }
-  keysearch;
-  clickSearch(event) {
-    let key = event.target.getAttribute('id');
-    this.keysearch = key.split('&text=')[1];
-    this.address = [];
-    let id = key.split('&text=')[0];
-    this.hotelService.getLocation(id).subscribe(data => {
-      this.makeMarker(data.json().result.geometry.location.lat, data.json().result.geometry.location.lng);
-    });
-  }
 
   //loại bỏ 1 ảnh khỏi list ảnh
   removeImg(ev) {
@@ -181,6 +155,7 @@ export class AddnewsComponent implements OnInit {
     for (var i = 0; i < this.listImg.length; i++) {
       if (this.listImg[i].id == id) {
         this.listImg.splice(i, 1);
+        this.listfileImg.splice(i, 1);
       }
     }
   }
